@@ -1,0 +1,140 @@
+"use client"
+
+import Link from "next/link"
+import { useState } from "react"
+import { Button } from "@/components/ui/button"
+import { ChevronDown, Menu, X } from "lucide-react"
+import { usePathname } from "next/navigation"
+
+export function Navbar() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [catalogDropdownOpen, setCatalogDropdownOpen] = useState(false)
+  const pathname = usePathname()
+
+  const catalogSections = [
+    { name: "Sushi & Japonés", href: "/catalogo/sushi-japones" },
+    { name: "Comida China", href: "/catalogo/comida-china" },
+    { name: "Cocina Coreana", href: "/catalogo/cocina-coreana" },
+    { name: "Cocina Tailandesa", href: "/catalogo/cocina-tailandesa" },
+  ]
+
+  return (
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-20">
+          {/* Logo */}
+          <Link href="/" className="flex items-center">
+            <span className="text-2xl font-bold text-foreground">MF Logística</span>
+          </Link>
+
+          {/* Desktop Menu */}
+          <div className="hidden md:flex items-center gap-8">
+            <Link
+              href="/"
+              className={`text-base font-medium transition-colors hover:text-accent ${
+                pathname === "/" ? "text-accent" : "text-foreground/80"
+              }`}
+            >
+              Inicio
+            </Link>
+
+            <Link
+              href="/quienes-somos"
+              className={`text-base font-medium transition-colors hover:text-accent ${
+                pathname === "/quienes-somos" ? "text-accent" : "text-foreground/80"
+              }`}
+            >
+              Quiénes Somos
+            </Link>
+
+            {/* Catalog Dropdown */}
+            <div
+              className="relative"
+              onMouseEnter={() => setCatalogDropdownOpen(true)}
+              onMouseLeave={() => setCatalogDropdownOpen(false)}
+            >
+              <button
+                className={`flex items-center gap-1 text-base font-medium transition-colors hover:text-accent ${
+                  pathname.startsWith("/catalogo") ? "text-accent" : "text-foreground/80"
+                }`}
+              >
+                Catálogo
+                <ChevronDown className="h-4 w-4" />
+              </button>
+
+              {catalogDropdownOpen && (
+                <div className="absolute top-full left-0 mt-2 w-56 bg-background border border-border rounded-lg shadow-lg py-2">
+                  {catalogSections.map((section) => (
+                    <Link
+                      key={section.href}
+                      href={section.href}
+                      className="block px-4 py-3 text-sm font-medium text-foreground/80 hover:bg-muted hover:text-accent transition-colors"
+                    >
+                      {section.name}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            <Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90">
+              <a href="https://wa.me/5491123456789" target="_blank" rel="noopener noreferrer">
+                Contacto
+              </a>
+            </Button>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button className="md:hidden p-2 text-foreground" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+            {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </button>
+        </div>
+
+        {/* Mobile Menu */}
+        {mobileMenuOpen && (
+          <div className="md:hidden py-4 border-t border-border">
+            <div className="flex flex-col gap-4">
+              <Link
+                href="/"
+                className="text-base font-medium text-foreground/80 hover:text-accent transition-colors"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Inicio
+              </Link>
+
+              <Link
+                href="/quienes-somos"
+                className="text-base font-medium text-foreground/80 hover:text-accent transition-colors"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Quiénes Somos
+              </Link>
+
+              <div className="flex flex-col gap-2">
+                <span className="text-base font-medium text-foreground/80">Catálogo</span>
+                <div className="pl-4 flex flex-col gap-2">
+                  {catalogSections.map((section) => (
+                    <Link
+                      key={section.href}
+                      href={section.href}
+                      className="text-sm font-medium text-foreground/60 hover:text-accent transition-colors"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      {section.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+
+              <Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90 w-full">
+                <a href="https://wa.me/5491123456789" target="_blank" rel="noopener noreferrer">
+                  Contacto
+                </a>
+              </Button>
+            </div>
+          </div>
+        )}
+      </div>
+    </nav>
+  )
+}
