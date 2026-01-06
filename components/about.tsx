@@ -2,6 +2,8 @@ import { Package, Users, TrendingUp, Clock, Target, Award } from "lucide-react"
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { MessageCircle } from "lucide-react"
+import Nosotros from "../public/quienes-somos.jpg"
+import Image from "next/image"
 
 export function About() {
   return (
@@ -17,49 +19,27 @@ export function About() {
               restaurantes de cocina oriental. Operamos desde 2016 ofreciendo un servicio personalizado y directo a
               nuestros clientes en todo el área metropolitana de Buenos Aires.
             </p>
+          <Image className="mx-auto my-8" alt="nosotros" src={Nosotros}/>
           </div>
 
-          {/* Main Values Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-            <Card className="text-center p-8 bg-card hover:shadow-lg transition-shadow duration-300">
-              <div className="w-16 h-16 bg-accent/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <Users className="h-8 w-8 text-accent" />
-              </div>
-              <h3 className="text-xl font-semibold text-foreground mb-3">Trato Directo</h3>
-              <p className="text-muted-foreground text-pretty leading-relaxed">
-                Relación personalizada con cada cliente para entender sus necesidades específicas
-              </p>
-            </Card>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <div className="text-center">
+              <div className="text-5xl font-bold text-accent mb-2">+8</div>
+              <p className="text-xl text-foreground font-semibold mb-2">Años de experiencia</p>
+              <p className="text-muted-foreground text-pretty">Desde 2016 trabajando con los mejores restaurantes</p>
+            </div>
 
-            <Card className="text-center p-8 bg-card hover:shadow-lg transition-shadow duration-300">
-              <div className="w-16 h-16 bg-accent/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <Package className="h-8 w-8 text-accent" />
-              </div>
-              <h3 className="text-xl font-semibold text-foreground mb-3">Logística Eficiente</h3>
-              <p className="text-muted-foreground text-pretty leading-relaxed">
-                Distribución rápida y confiable en CABA y AMBA
-              </p>
-            </Card>
+            <div className="text-center">
+              <div className="text-5xl font-bold text-accent mb-2">100%</div>
+              <p className="text-xl text-foreground font-semibold mb-2">Productos de calidad</p>
+              <p className="text-muted-foreground text-pretty">Garantizamos frescura y autenticidad en cada entrega</p>
+            </div>
 
-            <Card className="text-center p-8 bg-card hover:shadow-lg transition-shadow duration-300">
-              <div className="w-16 h-16 bg-accent/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <TrendingUp className="h-8 w-8 text-accent" />
-              </div>
-              <h3 className="text-xl font-semibold text-foreground mb-3">Precios Mayoristas</h3>
-              <p className="text-muted-foreground text-pretty leading-relaxed">
-                Tarifas competitivas para compras al por mayor
-              </p>
-            </Card>
-
-            <Card className="text-center p-8 bg-card hover:shadow-lg transition-shadow duration-300">
-              <div className="w-16 h-16 bg-accent/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <Clock className="h-8 w-8 text-accent" />
-              </div>
-              <h3 className="text-xl font-semibold text-foreground mb-3">Experiencia</h3>
-              <p className="text-muted-foreground text-pretty leading-relaxed">
-                Más de 8 años en el sector gastronómico oriental
-              </p>
-            </Card>
+            <div className="text-center">
+              <div className="text-5xl font-bold text-accent mb-2">24h</div>
+              <p className="text-xl text-foreground font-semibold mb-2">Tiempo de respuesta</p>
+              <p className="text-muted-foreground text-pretty">Atención rápida a tus consultas y pedidos</p>
+            </div>
           </div>
         </div>
       </section>
@@ -103,24 +83,47 @@ export function About() {
             <div className="w-24 h-1 bg-accent mx-auto" />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-            <div className="text-center">
-              <div className="text-5xl font-bold text-accent mb-2">+8</div>
-              <p className="text-xl text-foreground font-semibold mb-2">Años de experiencia</p>
-              <p className="text-muted-foreground text-pretty">Desde 2016 trabajando con los mejores restaurantes</p>
-            </div>
+          {/* Main Values Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+            <Card className="text-center p-8 bg-card hover:shadow-lg transition-shadow duration-300">
+              <div className="w-16 h-16 bg-accent/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                <Users className="h-8 w-8 text-accent" />
+              </div>
+              <h3 className="text-xl font-semibold text-foreground mb-3">Trato Directo</h3>
+              <p className="text-muted-foreground text-pretty leading-relaxed">
+                Relación personalizada con cada cliente para entender sus necesidades específicas
+              </p>
+            </Card>
 
-            <div className="text-center">
-              <div className="text-5xl font-bold text-accent mb-2">100%</div>
-              <p className="text-xl text-foreground font-semibold mb-2">Productos de calidad</p>
-              <p className="text-muted-foreground text-pretty">Garantizamos frescura y autenticidad en cada entrega</p>
-            </div>
+            <Card className="text-center p-8 bg-card hover:shadow-lg transition-shadow duration-300">
+              <div className="w-16 h-16 bg-accent/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                <Package className="h-8 w-8 text-accent" />
+              </div>
+              <h3 className="text-xl font-semibold text-foreground mb-3">Logística Eficiente</h3>
+              <p className="text-muted-foreground text-pretty leading-relaxed">
+                Distribución rápida y confiable en CABA y AMBA
+              </p>
+            </Card>
 
-            <div className="text-center">
-              <div className="text-5xl font-bold text-accent mb-2">24h</div>
-              <p className="text-xl text-foreground font-semibold mb-2">Tiempo de respuesta</p>
-              <p className="text-muted-foreground text-pretty">Atención rápida a tus consultas y pedidos</p>
-            </div>
+            <Card className="text-center p-8 bg-card hover:shadow-lg transition-shadow duration-300">
+              <div className="w-16 h-16 bg-accent/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                <TrendingUp className="h-8 w-8 text-accent" />
+              </div>
+              <h3 className="text-xl font-semibold text-foreground mb-3">Precios Mayoristas</h3>
+              <p className="text-muted-foreground text-pretty leading-relaxed">
+                Tarifas competitivas para compras al por mayor
+              </p>
+            </Card>
+
+            <Card className="text-center p-8 bg-card hover:shadow-lg transition-shadow duration-300">
+              <div className="w-16 h-16 bg-accent/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                <Clock className="h-8 w-8 text-accent" />
+              </div>
+              <h3 className="text-xl font-semibold text-foreground mb-3">Experiencia</h3>
+              <p className="text-muted-foreground text-pretty leading-relaxed">
+                Más de 8 años en el sector gastronómico oriental
+              </p>
+            </Card>
           </div>
         </div>
       </section>

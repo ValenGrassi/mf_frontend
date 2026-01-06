@@ -2,7 +2,6 @@ import { Navbar } from "@/components/navbar"
 import { Hero } from "@/components/hero"
 import { Services } from "@/components/services"
 import { Contact } from "@/components/contact"
-import { WhatsAppButton } from "@/components/whatsapp-button"
 import { AboutPreview } from "@/components/about-preview"
 import { CatalogPreview } from "@/components/catalog-preview"
 import type { Metadata } from "next"
@@ -43,7 +42,6 @@ export default function Page() {
         <AboutPreview />
         <CatalogPreview />
         <Contact />
-        <WhatsAppButton />
       </main>
       <script
         type="application/ld+json"

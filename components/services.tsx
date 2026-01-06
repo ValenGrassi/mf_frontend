@@ -37,7 +37,7 @@ export function Services() {
           {services.map((service, index) => {
             const Icon = service.icon
             return (
-              <Card key={index} className="p-8 hover:shadow-lg transition-shadow duration-300 bg-card">
+              <Card key={index} className="p-8 hover:shadow-lg transition-shadow duration-300 bg-card cursor-context-menu">
                 <div className="flex items-start gap-6">
                   <div className="w-14 h-14 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
                     <Icon className="h-7 w-7 text-accent" />

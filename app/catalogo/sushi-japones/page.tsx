@@ -1,6 +1,5 @@
 import { Navbar } from "@/components/navbar"
 import { CatalogSection } from "@/components/catalog-section"
-import { WhatsAppButton } from "@/components/whatsapp-button"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -60,7 +59,6 @@ export default function SushiJaponesPage() {
           description="Insumos de primera calidad para restaurantes de sushi y cocina japonesa. Desde pescados frescos hasta condimentos tradicionales."
           products={products}
         />
-        <WhatsAppButton />
       </main>
     </>
   )

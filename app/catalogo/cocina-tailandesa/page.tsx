@@ -1,6 +1,5 @@
 import { Navbar } from "@/components/navbar"
 import { CatalogSection } from "@/components/catalog-section"
-import { WhatsAppButton } from "@/components/whatsapp-button"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -58,7 +57,6 @@ export default function CocinaTailandesaPage() {
           description="Ingredientes frescos y auténticos para tu restaurante de cocina tailandesa. Especias aromáticas y condimentos tradicionales."
           products={products}
         />
-        <WhatsAppButton />
       </main>
     </>
   )

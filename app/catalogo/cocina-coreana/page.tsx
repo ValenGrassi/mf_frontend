@@ -1,6 +1,5 @@
 import { Navbar } from "@/components/navbar"
 import { CatalogSection } from "@/components/catalog-section"
-import { WhatsAppButton } from "@/components/whatsapp-button"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -58,7 +57,6 @@ export default function CocinaCoreanaPage() {
           description="Insumos auténticos para restaurantes de cocina coreana. Desde kimchi hasta ingredientes para BBQ coreano."
           products={products}
         />
-        <WhatsAppButton />
       </main>
     </>
   )

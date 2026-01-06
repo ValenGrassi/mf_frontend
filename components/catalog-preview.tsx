@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card"
-import { ChefHat, UtensilsCrossed, Flame, Soup } from "lucide-react"
+import { ChefHat, UtensilsCrossed, Flame, Soup, MessageCircle } from "lucide-react"
 import Link from "next/link"
+import { Button } from "./ui/button"
 
 export function CatalogPreview() {
   const categories = [
@@ -9,28 +10,28 @@ export function CatalogPreview() {
       title: "Sushi & Japonés",
       description: "Nori, arroz, wasabi, jengibre, salsa de soja y más",
       href: "/catalogo/sushi-japones",
-      image: "/elegant-sushi-ingredients-on-clean-minimalist-back.jpg",
+      image: "/nori-seaweed-sheets-for-sushi.jpg",
     },
     {
       icon: UtensilsCrossed,
       title: "Comida China",
       description: "Fideos, salsas, vegetales, especias asiáticas",
       href: "/catalogo/comida-china",
-      image: "/chinese-cuisine-ingredients-wok-noodles-soy-sauce.jpg",
+      image: "/sushi-takeout-containers-and-boxes.jpg",
     },
     {
       icon: Flame,
       title: "Cocina Coreana",
       description: "Gochujang, kimchi, aceite de sésamo, ingredientes coreanos",
       href: "/catalogo/cocina-coreana",
-      image: "/korean-cooking-ingredients-gochujang-kimchi-sesame.jpg",
+      image: "/soy-sauce-bottles-and-asian-condiments.jpg",
     },
     {
       icon: Soup,
       title: "Cocina Tailandesa",
       description: "Curry, leche de coco, hierba limón, ingredientes tailandeses",
       href: "/catalogo/cocina-tailandesa",
-      image: "/thai-cuisine-ingredients-curry-paste-coconut-lime.jpg",
+      image: "/frozen-seafood-for-sushi-restaurant.jpg",
     },
   ]
 
@@ -50,7 +51,7 @@ export function CatalogPreview() {
             const Icon = category.icon
             return (
               <Link key={index} href={category.href}>
-                <Card className="group cursor-pointer overflow-hidden hover:shadow-xl transition-all duration-300 h-full">
+                <Card className="group cursor-pointer overflow-hidden hover:shadow-xl transition-all duration-300 h-full pt-0">
                   <div className="relative h-48 overflow-hidden">
                     <img
                       src={category.image || "/placeholder.svg"}
@@ -74,8 +75,17 @@ export function CatalogPreview() {
           })}
         </div>
 
-        <div className="text-center">
-          <p className="text-muted-foreground mb-6">Explorá nuestro catálogo completo de productos</p>
+        <div className="text-center bg-muted/50 rounded-2xl p-12">
+          <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+            ¿Necesitás más información sobre nuestros productos?
+          </h3>
+          <p className="text-muted-foreground mb-6 text-lg text-pretty">
+            Contactanos por WhatsApp para recibir nuestro catálogo completo con precios actualizados
+          </p>
+          <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
+            <MessageCircle className="mr-2 h-5 w-5" />
+            Solicitar Catálogo
+          </Button>
         </div>
       </div>
     </section>

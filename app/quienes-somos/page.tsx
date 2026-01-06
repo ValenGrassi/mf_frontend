@@ -1,6 +1,5 @@
 import { Navbar } from "@/components/navbar"
 import { About } from "@/components/about"
-import { WhatsAppButton } from "@/components/whatsapp-button"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -27,7 +26,6 @@ export default function QuienesSomosPage() {
       <Navbar />
       <main className="min-h-screen pt-20">
         <About />
-        <WhatsAppButton />
       </main>
     </>
   )
