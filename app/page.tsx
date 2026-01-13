@@ -5,6 +5,7 @@ import { Contact } from "@/components/contact"
 import { AboutPreview } from "@/components/about-preview"
 import { CatalogPreview } from "@/components/catalog-preview"
 import type { Metadata } from "next"
+import { FeaturedProducts } from "@/components/featured-products"
 
 export const metadata: Metadata = {
   title: "MF Logística - Distribución Mayorista para Restaurantes Orientales | CABA y AMBA",

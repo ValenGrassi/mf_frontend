@@ -3,7 +3,7 @@
 import Link from "next/link"
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import { ChevronDown, Menu, X } from "lucide-react"
+import { ChevronDown, ChevronUp, Menu, X } from "lucide-react"
 import { usePathname } from "next/navigation"
 import Logo from "../public/logo.png"
 import Image from "next/image"
@@ -21,13 +21,15 @@ export function Navbar() {
   ]
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white backdrop-blur-sm border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center">
+          <Link href="/" className="flex items-center group">
             <Image className="w-20 h-20" src={Logo} alt="logo" />
-            <span className="text-2xl font-bold text-foreground">MF Logística</span>
+            <span className="text-2xl font-bold text-foreground transition-colors group-hover:text-red-500">
+              MF Logística
+            </span>
           </Link>
 
           {/* Desktop Menu */}
@@ -57,27 +59,37 @@ export function Navbar() {
               onMouseLeave={() => setCatalogDropdownOpen(false)}
             >
               <button
+                onClick={() => setCatalogDropdownOpen(!catalogDropdownOpen)}
                 className={`flex items-center gap-1 text-base font-medium transition-colors hover:text-accent cursor-pointer ${
                   pathname.startsWith("/catalogo") ? "text-accent" : "text-foreground/80"
                 }`}
               >
                 Catálogo
-                <ChevronDown className="h-4 w-4" />
+                <ChevronUp
+                  className={`h-4 w-4 transition-transform duration-200 ${
+                    catalogDropdownOpen ? "rotate-180" : ""
+                  }`}
+                />
               </button>
 
-              {catalogDropdownOpen && (
-                <div className="absolute top-full left-0 mt-2 w-56 bg-background border border-border rounded-lg shadow-lg py-2">
-                  {catalogSections.map((section) => (
-                    <Link
-                      key={section.href}
-                      href={section.href}
-                      className="block px-4 py-3 text-sm font-medium text-foreground/80 hover:bg-muted hover:text-accent transition-colors"
-                    >
-                      {section.name}
-                    </Link>
-                  ))}
-                </div>
-              )}
+              {/* Dropdown con animación */}
+              <div
+                className={`absolute top-full left-0 mt-2 w-56 bg-background border border-border rounded-lg shadow-lg py-2 transform transition-all duration-200 ease-out ${
+                  catalogDropdownOpen
+                    ? "opacity-100 translate-y-0 visible"
+                    : "opacity-0 -translate-y-2 invisible"
+                }`}
+              >
+                {catalogSections.map((section) => (
+                  <Link
+                    key={section.href}
+                    href={section.href}
+                    className="block px-4 py-3 text-sm font-medium text-foreground/80 hover:bg-muted hover:text-accent transition-colors"
+                  >
+                    {section.name}
+                  </Link>
+                ))}
+              </div>
             </div>
 
             <Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90">
@@ -88,7 +100,10 @@ export function Navbar() {
           </div>
 
           {/* Mobile Menu Button */}
-          <button className="md:hidden p-2 text-foreground" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+          <button
+            className="md:hidden p-2 text-foreground"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
             {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>
