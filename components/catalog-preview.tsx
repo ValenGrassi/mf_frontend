@@ -7,31 +7,31 @@ export function CatalogPreview() {
   const categories = [
     {
       icon: ChefHat,
-      title: "Sushi & Japonés",
-      description: "Nori, arroz, wasabi, jengibre, salsa de soja y más",
+      title: "Pescadería",
+      description: "Salmón, langostino, mejillón.",
       href: "/catalogo/sushi-japones",
-      image: "/nori-seaweed-sheets-for-sushi.jpg",
+      image: "/pescaderia-catalogo.png",
     },
     {
       icon: UtensilsCrossed,
-      title: "Comida China",
-      description: "Fideos, salsas, vegetales, especias asiáticas",
+      title: "Frescos y Congelados",
+      description: "Caviar, kanikama, pulpo, atún.",
       href: "/catalogo/comida-china",
-      image: "/sushi-takeout-containers-and-boxes.jpg",
+      image: "/frozen-seafood-for-sushi-restaurant.jpg",
     },
     {
       icon: Flame,
-      title: "Cocina Coreana",
-      description: "Gochujang, kimchi, aceite de sésamo, ingredientes coreanos",
+      title: "Productos para Sushi",
+      description: "Arroz, algas, soja, salsas.",
       href: "/catalogo/cocina-coreana",
-      image: "/soy-sauce-bottles-and-asian-condiments.jpg",
+      image: "/nori-seaweed-sheets-for-sushi.jpg",
     },
     {
       icon: Soup,
-      title: "Cocina Tailandesa",
-      description: "Curry, leche de coco, hierba limón, ingredientes tailandeses",
+      title: "Almacén",
+      description: "Condimentos, verdulería, papelera, limpieza.",
       href: "/catalogo/cocina-tailandesa",
-      image: "/frozen-seafood-for-sushi-restaurant.jpg",
+      image: "/sushi-takeout-containers-and-boxes.jpg",
     },
   ]
 
@@ -42,7 +42,7 @@ export function CatalogPreview() {
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">Nuestro Catálogo</h2>
           <div className="w-24 h-1 bg-accent mx-auto mb-8" />
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
-            Productos premium para todos los tipos de cocina oriental
+            Productos <b>premium</b> para todos los tipos de cocina oriental
           </p>
         </div>
 

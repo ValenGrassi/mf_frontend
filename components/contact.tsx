@@ -1,7 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { MessageCircle, MapPin, Phone, Mail } from "lucide-react"
+import { MessageCircle, MapPin, Phone, Mail, Clock } from "lucide-react"
 
 export function Contact() {
   const handleWhatsApp = () => {
@@ -21,6 +21,16 @@ export function Contact() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
+            <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Clock className="h-6 w-6 text-accent" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">Horarios</h3>
+                  <p className="text-neutral-300">Lunes a Sábados</p>
+                  <p className="text-neutral-300">8:00hs a 14:30hs</p>
+                </div>
+              </div>
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
                 <MapPin className="h-6 w-6 text-accent" />
@@ -50,6 +60,7 @@ export function Contact() {
                 <p className="text-neutral-300">info@mflogistica.com.ar</p>
               </div>
             </div>
+            
           </div>
 
           <div className="bg-neutral-800 rounded-2xl p-8 md:p-12">

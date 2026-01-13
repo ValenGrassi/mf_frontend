@@ -5,6 +5,8 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { ChevronDown, Menu, X } from "lucide-react"
 import { usePathname } from "next/navigation"
+import Logo from "../public/logo.png"
+import Image from "next/image"
 
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -12,10 +14,10 @@ export function Navbar() {
   const pathname = usePathname()
 
   const catalogSections = [
-    { name: "Sushi & Japonés", href: "/catalogo/sushi-japones" },
-    { name: "Comida China", href: "/catalogo/comida-china" },
-    { name: "Cocina Coreana", href: "/catalogo/cocina-coreana" },
-    { name: "Cocina Tailandesa", href: "/catalogo/cocina-tailandesa" },
+    { name: "Pescadería", href: "/catalogo/pescaderia" },
+    { name: "Frescos y Congelados", href: "/catalogo/frescos-y-congelados" },
+    { name: "Productos para Sushi", href: "/catalogo/productos-para-sushi" },
+    { name: "Almacén", href: "/catalogo/almacen" },
   ]
 
   return (
@@ -24,6 +26,7 @@ export function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center">
+            <Image className="w-20 h-20" src={Logo} alt="logo" />
             <span className="text-2xl font-bold text-foreground">MF Logística</span>
           </Link>
 
@@ -54,7 +57,7 @@ export function Navbar() {
               onMouseLeave={() => setCatalogDropdownOpen(false)}
             >
               <button
-                className={`flex items-center gap-1 text-base font-medium transition-colors hover:text-accent ${
+                className={`flex items-center gap-1 text-base font-medium transition-colors hover:text-accent cursor-pointer ${
                   pathname.startsWith("/catalogo") ? "text-accent" : "text-foreground/80"
                 }`}
               >
