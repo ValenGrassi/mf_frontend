@@ -12,10 +12,10 @@ export function AboutPreview() {
             <div className="w-24 h-1 bg-accent mb-8" />
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed text-pretty">
               Somos <strong className="text-foreground">MF Logística</strong>, una empresa argentina especializada en la
-              distribución mayorista de productos para restaurantes de cocina oriental.
+              distribución mayorista de productos para restaurantes de sushi.
             </p>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed text-pretty">
-              Con más de 8 años de experiencia en el mercado, nos hemos consolidado como el socio logístico de confianza
+              Con más de 9 años de experiencia en el mercado, nos hemos consolidado como el socio logístico de confianza
               para cientos de restaurantes en Buenos Aires.
             </p>
 
@@ -24,7 +24,7 @@ export function AboutPreview() {
                 <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mx-auto mb-3">
                   <Award className="h-6 w-6 text-accent" />
                 </div>
-                <p className="text-3xl font-bold text-foreground mb-1">+8</p>
+                <p className="text-3xl font-bold text-foreground mb-1">+9</p>
                 <p className="text-sm text-muted-foreground">Años de experiencia</p>
               </div>
               <div className="text-center">
@@ -38,7 +38,7 @@ export function AboutPreview() {
                 <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mx-auto mb-3">
                   <TrendingUp className="h-6 w-6 text-accent" />
                 </div>
-                <p className="text-3xl font-bold text-foreground mb-1">99%</p>
+                <p className="text-3xl font-bold text-foreground mb-1">100%</p>
                 <p className="text-sm text-muted-foreground">Entregas a tiempo</p>
               </div>
             </div>

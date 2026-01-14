@@ -21,7 +21,7 @@ export function Services() {
     {
       icon: ChefHat,
       title: "Abastecimiento para restaurantes orientales",
-      description: "Especialistas en sushi, japonés, chino y cocina asiática",
+      description: "Especialistas en sushi",
     },
   ]
 

@@ -1,4 +1,4 @@
-import { Package, Users, TrendingUp, Clock, Target, Award } from "lucide-react"
+import { Package, Users, TrendingUp, Clock, Target, Award, History } from "lucide-react"
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { MessageCircle } from "lucide-react"
@@ -11,20 +11,36 @@ export function About() {
       {/* Hero Section */}
       <section className="py-24 bg-gradient-to-b from-muted/50 to-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 text-balance">Quiénes Somos</h1>
-            <div className="w-24 h-1 bg-accent mx-auto mb-8" />
-            <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
-              MF Logística es una empresa argentina especializada en la distribución de insumos gastronómicos para
-              restaurantes de cocina oriental. Operamos desde 2016 ofreciendo un servicio personalizado y directo a
-              nuestros clientes en todo el área metropolitana de Buenos Aires.
-            </p>
-          <Image className="mx-auto my-8" alt="nosotros" src={Nosotros}/>
-          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-24">
+            {/* Left: Information */}
+            <div>
+              <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 text-balance">Quiénes Somos</h1>
+              <div className="w-24 h-1 bg-accent mb-8" />
+              <p className="text-lg md:text-xl text-muted-foreground mb-6 text-pretty leading-relaxed">
+              MF Logística es una empresa argentina de origen familiar, especializada en la distribución de insumos gastronómicos para restaurantes de sushi.
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+              </p>
+              <p className="text-lg text-muted-foreground text-pretty leading-relaxed">
+                Desde 2016, brindamos un servicio personalizado y directo, acompañando a nuestros clientes en toda el Área Metropolitana de Buenos Aires, con compromiso, cercanía y atención permanente.
+              </p>
+            </div>
+
+            {/* Right: Image */}
+            <div className="relative">
+              <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-xl">
+                <img
+                  src="/nosotros.jpg"
+                  alt="MF Logística - Distribución para restaurantes"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-accent/10 rounded-lg -z-10" />
+              <div className="absolute -top-6 -left-6 w-24 h-24 bg-accent/5 rounded-lg -z-10" />
+            </div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="text-5xl font-bold text-accent mb-2">+8</div>
+              <div className="text-5xl font-bold text-accent mb-2">+9</div>
               <p className="text-xl text-foreground font-semibold mb-2">Años de experiencia</p>
               <p className="text-muted-foreground text-pretty">Desde 2016 trabajando con los mejores restaurantes</p>
             </div>
@@ -43,6 +59,41 @@ export function About() {
           </div>
         </div>
       </section>
+      <section className="py-24 bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <div className="flex items-center gap-4 mb-8">
+              <div className="w-14 h-14 bg-accent/10 rounded-lg flex items-center justify-center shrink-0">
+                <History className="h-7 w-7 text-accent" />
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold text-foreground">Nuestra Historia</h2>
+            </div>
+            <div className="w-24 h-1 bg-accent mb-8" />
+
+            <div className="space-y-6 text-muted-foreground leading-relaxed text-lg">
+              <p className="text-pretty">
+              MF Logística nació en el año 2016 como un emprendimiento familiar, con el objetivo de abastecer de manera integral a restaurantes de sushi.
+
+              </p>
+
+              <p className="text-pretty">
+              Con dedicación, constancia y trabajo diario, fuimos creciendo año tras año, impulsados por la confianza de nuestros clientes, quienes han sido parte fundamental de este camino.
+              </p>
+
+              <p className="text-pretty">
+              Ese crecimiento nos motiva a seguir mejorando cada día, manteniendo nuestros valores y ofreciendo el servicio y la calidad que nuestros clientes se merecen.
+              </p>
+
+              <p className="text-pretty">
+                Hoy, MF Logística se enorgullece de ser parte del éxito de decenas de restaurantes en CABA y AMBA. Cada
+                plato que llega a las mesas de sus clientes lleva un poco de nuestro compromiso y dedicación. Seguimos
+                creciendo, pero mantenemos la esencia que nos caracteriza desde el primer día: trato personalizado,
+                servicio eficiente y productos de primera calidad.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Mission & Vision Section */}
       <section className="py-24 bg-muted/30">
@@ -54,9 +105,7 @@ export function About() {
               </div>
               <h2 className="text-3xl font-bold text-foreground mb-4">Nuestra Misión</h2>
               <p className="text-muted-foreground text-pretty leading-relaxed text-lg">
-                Proveer a los restaurantes de cocina oriental con los mejores insumos del mercado, garantizando calidad,
-                frescura y puntualidad en cada entrega. Nos comprometemos a ser el socio logístico confiable que permite
-                a nuestros clientes enfocarse en lo que mejor hacen: crear experiencias gastronómicas excepcionales.
+              Brindar soluciones logísticas eficientes y confiables en la distribución de insumos gastronómicos para restaurantes de sushi, ofreciendo un servicio personalizado, ágil y de calidad, basado en la cercanía y el compromiso con cada cliente.
               </p>
             </Card>
 
@@ -66,9 +115,7 @@ export function About() {
               </div>
               <h2 className="text-3xl font-bold text-foreground mb-4">Nuestra Visión</h2>
               <p className="text-muted-foreground text-pretty leading-relaxed text-lg">
-                Ser la empresa líder en distribución de insumos para gastronomía oriental en Argentina, reconocidos por
-                nuestra excelencia en servicio, calidad de productos y relaciones duraderas con nuestros clientes.
-                Aspiramos a expandir nuestra cobertura manteniendo siempre el trato personalizado que nos caracteriza.
+              Ser una empresa referente en la distribución de insumos gastronómicos para sushi en el Área Metropolitana de Buenos Aires, reconocida por la calidad de nuestros productos, la excelencia en el servicio y la relación de confianza construida con nuestros clientes.
               </p>
             </Card>
           </div>

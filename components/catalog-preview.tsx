@@ -19,10 +19,10 @@ function Badge({ children, className = "" }: BadgeProps) {
 
 export function CatalogPreview() {
   const categories = [
-    { icon: FishSymbol, title: "Pescadería", description: "Salmón, langostino, mejillón.", href: "/catalogo/sushi-japones", image: "/pescaderia-catalogo.png" },
-    { icon: Refrigerator, title: "Frescos y Congelados", description: "Caviar, kanikama, pulpo, atún.", href: "/catalogo/comida-china", image: "/frozen-seafood-for-sushi-restaurant.jpg" },
-    { icon: Flame, title: "Productos para Sushi", description: "Arroz, algas, soja, salsas.", href: "/catalogo/cocina-coreana", image: "/nori-seaweed-sheets-for-sushi.jpg" },
-    { icon: Store, title: "Almacén", description: "Condimentos, verdulería, papelera, limpieza.", href: "/catalogo/cocina-tailandesa", image: "/almacen.png" },
+    { icon: FishSymbol, title: "Pescadería", description: "Salmón, langostino, mejillón.", href: "/catalogo/pescaderia", image: "/pescaderia-catalogo.png" },
+    { icon: Refrigerator, title: "Frescos y Congelados", description: "Caviar, kanikama, pulpo, atún.", href: "/catalogo/frescos-y-congelados", image: "/frozen-seafood-for-sushi-restaurant.jpg" },
+    { icon: Flame, title: "Productos para Sushi", description: "Arroz, algas, soja, salsas.", href: "/catalogo/productos-para-sushi", image: "/nori-seaweed-sheets-for-sushi.jpg" },
+    { icon: Store, title: "Almacén", description: "Condimentos, verdulería, papelera, limpieza.", href: "/catalogo/almacen", image: "/almacen.png" },
   ]
 
   const featuredProducts = [
@@ -43,11 +43,6 @@ export function CatalogPreview() {
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
             Productos <b>premium</b> para todos los tipos de cocina oriental
           </p>
-        </div>
-
-        {/* Categorías Principales */}
-        <div className="text-center mb-12">
-          <h3 className="text-3xl md:text-4xl font-bold text-foreground">Categorías Principales</h3>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
@@ -79,7 +74,7 @@ export function CatalogPreview() {
           <h3 className="text-2xl md:text-3xl font-bold text-foreground">Productos Destacados</h3>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-20 mx-8 md:mx-0">
           {featuredProducts.map((product, index) => (
             <Card key={index} className="group cursor-pointer overflow-hidden hover:shadow-xl transition-all duration-300 pt-0">
               <div className="relative h-40 sm:h-48 overflow-hidden">
@@ -96,7 +91,8 @@ export function CatalogPreview() {
         </div>
 
         {/* CTA final */}
-        <div className="text-center bg-muted/50 rounded-2xl p-12">
+        {/* Additional Info */}
+        <div className="text-center rounded-2xl pt-12">
           <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
             ¿Necesitás más información sobre nuestros productos?
           </h3>

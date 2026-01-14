@@ -92,11 +92,18 @@ export function Navbar() {
               </div>
             </div>
 
-            <Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90">
+            <div className="flex justify-center items-center gap-4"><Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90">
               <a href="https://wa.me/5491123456789" target="_blank" rel="noopener noreferrer">
                 Contacto
               </a>
             </Button>
+
+            <Link
+              href="#como-pedir"
+              className={`text-base font-bold transition-colors hover:text-accent text-foreground/80`}
+            >
+              Hacer pedido
+            </Link></div>
           </div>
 
           {/* Mobile Menu Button */}

@@ -6,6 +6,8 @@ import { AboutPreview } from "@/components/about-preview"
 import { CatalogPreview } from "@/components/catalog-preview"
 import type { Metadata } from "next"
 import { FeaturedProducts } from "@/components/featured-products"
+import { OrderProcess } from "@/components/order-process"
+import { Suppliers } from "@/components/suppliers"
 
 export const metadata: Metadata = {
   title: "MF Logística - Distribución Mayorista para Restaurantes Orientales | CABA y AMBA",
@@ -42,6 +44,8 @@ export default function Page() {
         <Services />
         <AboutPreview />
         <CatalogPreview />
+        <Suppliers/>
+        <OrderProcess />
         <Contact />
       </main>
       <script

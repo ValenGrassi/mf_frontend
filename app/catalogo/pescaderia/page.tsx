@@ -3,22 +3,21 @@ import { CatalogSection } from "@/components/catalog-section"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Catálogo Cocina Coreana - Kimchi, Gochujang y más | MF Logística",
+  title: "Catálogo Pescadería - Salmón, langostino, mejillón | MF Logística",
   description:
-    "Distribuimos kimchi, gochujang, carnes para bulgogi, pasta de soja y todos los ingredientes para tu restaurante de cocina coreana en Buenos Aires. Productos auténticos a precios mayoristas.",
+    "Distribuimos salmón, langostino, mejillón, atun y todos los ingredientes para tu restaurante de cocina coreana en Buenos Aires. Productos auténticos a precios mayoristas.",
   keywords: [
-    "insumos cocina coreana",
-    "kimchi",
-    "gochujang",
-    "bulgogi",
-    "ingredientes coreanos",
-    "BBQ coreano",
-    "mayorista comida coreana",
-    "distribución productos coreanos Buenos Aires",
+    "insumos sushi",
+    "pescados",
+    "salmon",
+    "sushi",
+    "langostino",
+    "mejillon",
+    "mayorista pescados",
   ],
   openGraph: {
-    title: "Catálogo Cocina Coreana - MF Logística",
-    description: "Ingredientes auténticos para restaurantes de cocina coreana en Buenos Aires",
+    title: "Catálogo Pescadería - MF Logística",
+    description: "Pescados para restaurantes de sushi en Buenos Aires",
     type: "website",
   },
 }
@@ -53,8 +52,8 @@ export default function CocinaCoreanaPage() {
       <Navbar />
       <main className="min-h-screen pt-20">
         <CatalogSection
-          title="Cocina Coreana"
-          description="Insumos auténticos para restaurantes de cocina coreana. Desde kimchi hasta ingredientes para BBQ coreano."
+          title="Pescadería"
+          description="Pescados frescos con precios de mayorista. Desde atún hasta salmón para hacer lo mejor de tu sushi."
           products={products}
         />
       </main>

@@ -54,7 +54,7 @@ export function Hero() {
     {/* Icono opcional al inicio */}
     {/* <MessageCircle className="h-6 w-6" /> */}
 
-    <span className="tracking-wide">Nuestros Servicios</span>
+    <span className="tracking-wide">Ver más</span>
 
     {/* Flecha con animación */}
     <ArrowBigDown
