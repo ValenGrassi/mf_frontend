@@ -25,19 +25,23 @@ export const metadata: Metadata = {
 export default function CocinaCoreanaPage() {
   const products = [
     {
-      category: "Kimchi y Fermentados",
+      category: "Salmón Entero Fresco",
+      image: "../salmon-entero.png",
       items: ["Kimchi de repollo", "Kimchi de rábano", "Pasta de pimiento gochugaru", "Pasta de pimiento gochujang"],
     },
     {
-      category: "Carnes y BBQ",
+      category: "Salmón de Penca",
+      image: "../salmon-de-penca.webp",
       items: ["Carne de res para bulgogi", "Costillas para galbi", "Panceta de cerdo", "Marinadas tradicionales"],
     },
     {
       category: "Condimentos Coreanos",
+      image: "../salmon-entero.png",
       items: ["Aceite de sésamo tostado", "Pasta de soja doenjang", "Vinagre de arroz", "Semillas de sésamo"],
     },
     {
       category: "Fideos y Otros",
+      image: "../salmon-entero.png",
       items: [
         "Fideos de trigo coreanos",
         "Fideos de cristal (dangmyeon)",

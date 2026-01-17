@@ -1,10 +1,12 @@
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { MessageCircle } from "lucide-react"
+import Image from "next/image"
 
 interface Product {
   category: string
   items: string[]
+  image: string
 }
 
 interface CatalogSectionProps {
@@ -25,20 +27,24 @@ export function CatalogSection({ title, description, products }: CatalogSectionP
         </div>
 
         {/* Product Categories */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           {products.map((product, index) => (
             <Card key={index} className="p-8 bg-card hover:shadow-lg transition-shadow duration-300">
               <h3 className="text-2xl font-semibold text-foreground mb-6 border-b border-border pb-3">
                 {product.category}
               </h3>
-              <ul className="space-y-3">
+              {/* <ul className="space-y-3">
                 {product.items.map((item, itemIndex) => (
                   <li key={itemIndex} className="flex items-start gap-3 text-muted-foreground">
                     <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0" />
                     <span className="leading-relaxed">{item}</span>
                   </li>
                 ))}
-              </ul>
+              </ul> */}
+              <div className="m-auto">
+                <Image src={product.image} width={300} height={300} alt="imagen" className="w-72 h-72" />
+                
+              </div>
             </Card>
           ))}
         </div>

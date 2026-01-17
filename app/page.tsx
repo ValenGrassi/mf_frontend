@@ -44,8 +44,8 @@ export default function Page() {
         <Services />
         <AboutPreview />
         <CatalogPreview />
-        <Suppliers/>
         <OrderProcess />
+        <Suppliers/>
         <Contact />
       </main>
       <script
