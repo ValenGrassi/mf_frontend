@@ -1,70 +1,95 @@
 import { Card } from "@/components/ui/card"
-import { FileText, ListChecks, Truck, CreditCard, Clock, MessageCircle } from "lucide-react"
-import { Button } from "./ui/button"
+import { FileText, ListChecks, Truck, CreditCard, ArrowRight } from "lucide-react"
 
 export function OrderProcess() {
   const steps = [
     {
-      number: 1,
-      title: "Solicite el listado actualizado al whatsapp",
+      number: "01",
+      title: "Solicite el listado",
+      description: "Pida el catálogo actualizado vía WhatsApp para ver stock y precios.",
       icon: FileText,
-      color: "text-blue-500",
-      bgColor: "bg-blue-500/10",
-      link:"#contacto"
     },
     {
-      number: 2,
+      number: "02",
       title: "Arme su pedido",
-      subtitle: "(No olvide las aclaraciones*)",
+      description: "Prepare su lista detallando cantidades y aclaraciones especiales.",
       icon: ListChecks,
-      color: "text-orange-500",
-      bgColor: "bg-orange-500/10",
     },
     {
-      number: 3,
-      title: "Indique si lo retira o lo enviamos",
+      number: "03",
+      title: "Logística",
+      description: "Indique si prefiere retirar en local o envío a domicilio.",
       icon: Truck,
-      color: "text-pink-500",
-      bgColor: "bg-pink-500/10",
     },
     {
-      number: 4,
-      title: "Aclare su método de pago",
-      subtitle: "(Efectivo o transferencia)",
+      number: "04",
+      title: "Método de pago",
+      description: "Aclare si abonará en efectivo o mediante transferencia.",
       icon: CreditCard,
-      color: "text-yellow-600",
-      bgColor: "bg-yellow-600/10",
     },
   ]
 
   return (
-    <section className="py-24 bg-background" id="como-pedir">
+    <section className="py-24 bg-background overflow-hidden" id="como-pedir">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 text-balance">Cómo Hacer su Pedido</h2>
-          <div className="w-24 h-1 bg-accent mx-auto mb-6" />
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
-            Proceso simple y rápido en <b>4 pasos</b>
+        
+        {/* Header con el estilo del catálogo */}
+        <div className="text-center mb-20">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 tracking-tight">
+            Cómo Hacer <span className="italic font-serif text-accent">Tu Pedido</span>
+          </h2>
+          <div className="w-24 h-1 bg-accent mx-auto" />
+          <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
+            Simplificamos el abastecimiento para que tu única preocupación sea el sabor de tus platos.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12 cursor-context-menu mx-8 md:mx-0">
-          {steps.map((step) => (
-            <Card
-              key={step.number}
-              className="p-8 bg-card hover:shadow-lg transition-all duration-300 hover:-translate-y-1 relative"
-              
-            >
-              <div className={`w-20 h-20 ${step.bgColor} rounded-lg flex items-center justify-center mx-auto mb-6`}>
-                <step.icon className={`h-10 w-10 ${step.color}`} />
+        <div className="relative">
+          {/* Línea decorativa de conexión (Solo visible en desktop) */}
+          <div className="hidden lg:block absolute top-1/2 left-0 w-full h-[1px] bg-border -translate-y-1/2 z-0" />
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative z-10">
+            {steps.map((step, index) => (
+              <div key={step.number} className="group">
+                <Card className="relative p-8 h-full bg-card border-none shadow-none hover:bg-muted/30 transition-all duration-500 rounded-3xl group">
+                  
+                  {/* Número de paso estilizado */}
+                  <div className="absolute top-6 right-8">
+                    <span className="text-6xl font-black text-foreground/[0.03] group-hover:text-accent/10 transition-colors">
+                      {step.number}
+                    </span>
+                  </div>
+
+                  {/* Icono con contenedor moderno */}
+                  <div className="relative mb-8">
+                    <div className="w-16 h-16 bg-background rounded-2xl flex items-center justify-center shadow-sm border border-border group-hover:border-accent group-hover:shadow-accent/10 transition-all duration-500">
+                      <step.icon className="h-7 w-7 text-foreground group-hover:text-accent transition-colors" />
+                    </div>
+                    
+                    {/* Flecha indicadora (Solo desktop, excepto el último) */}
+                    {index !== steps.length - 1 && (
+                      <div className="hidden lg:flex absolute top-1/2 -right-4 translate-x-full -translate-y-1/2 text-muted-foreground/30">
+                        <ArrowRight className="h-5 w-5" />
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Texto */}
+                  <div className="relative">
+                    <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-accent transition-colors">
+                      {step.title}
+                    </h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      {step.description}
+                    </p>
+                  </div>
+
+                  {/* Barra inferior decorativa */}
+                  <div className="absolute bottom-0 left-8 right-8 h-1 bg-accent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-full" />
+                </Card>
               </div>
-              <div className="text-center mb-4">
-                <div className="text-5xl font-bold text-muted-foreground/20 mb-2">{step.number}</div>
-                <h3 className="text-lg font-medium text-muted-foreground mb-2 text-balance leading-snug">{step.title}</h3>
-                {step.subtitle && <p className="text-sm font-semibold text-muted-foreground">{step.subtitle}</p>}
-              </div>
-            </Card>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>

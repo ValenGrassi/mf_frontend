@@ -7,6 +7,13 @@ export function AboutPreview() {
     <section className="py-24 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="relative">
+            <img
+              src="/modern-logistics-warehouse-with-oriental-food-supp.jpg"
+              alt="Equipo de MF Logística"
+              className="rounded-2xl shadow-2xl w-full h-[500px] object-cover"
+            />
+          </div>
           <div>
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Quiénes Somos</h2>
             <div className="w-24 h-1 bg-accent mb-8" />
@@ -48,13 +55,6 @@ export function AboutPreview() {
             </Button>
           </div>
 
-          <div className="relative">
-            <img
-              src="/modern-logistics-warehouse-with-oriental-food-supp.jpg"
-              alt="Equipo de MF Logística"
-              className="rounded-2xl shadow-2xl w-full h-[500px] object-cover"
-            />
-          </div>
         </div>
       </div>
     </section>

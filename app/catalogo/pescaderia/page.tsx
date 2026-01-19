@@ -27,28 +27,38 @@ export default function CocinaCoreanaPage() {
     {
       category: "Salmón Entero Fresco",
       image: "../salmon-entero.png",
-      items: ["Kimchi de repollo", "Kimchi de rábano", "Pasta de pimiento gochugaru", "Pasta de pimiento gochujang"],
+      subtitle: "Premium Salar x KG"
     },
     {
       category: "Salmón de Penca",
       image: "../salmon-de-penca.webp",
-      items: ["Carne de res para bulgogi", "Costillas para galbi", "Panceta de cerdo", "Marinadas tradicionales"],
+      subtitle: "x KG"
     },
     {
-      category: "Condimentos Coreanos",
-      image: "../salmon-entero.png",
-      items: ["Aceite de sésamo tostado", "Pasta de soja doenjang", "Vinagre de arroz", "Semillas de sésamo"],
+      category: "Salmón Ahumado Feteado",
+      image: "../salmon-feteado.webp",
+      subtitle: "En Penca x KG"
     },
     {
-      category: "Fideos y Otros",
-      image: "../salmon-entero.png",
-      items: [
-        "Fideos de trigo coreanos",
-        "Fideos de cristal (dangmyeon)",
-        "Papel de algas para gimbap",
-        "Harina de arroz",
-      ],
+      category: "Cola de Langostino Mix en Plancha o IQF",
+      image: "../cola-langostino.jpg",
+      subtitle:"x KG"
     },
+    {
+      category:"Cola de Langostino N1 y N2 en cajitas",
+      image:"../caja-cola.webp",
+      subtitle:"x KG"
+    },
+    {
+      category:"Langostinos Pelados",
+      image:"../langostinos-pelados.jpg",
+      subtitle:"IQF o x KG"
+    },
+    {
+      category:"Mejillón Pelado",
+      image:"../mejillon-pelado.webp",
+      subtitle:"Chileno IQF o x KG"
+    }
   ]
 
   return (

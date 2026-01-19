@@ -25,48 +25,38 @@ export function Hero() {
   }, [])
 
   return (
-    <section className="relative min-h-[calc(100vh-5rem)] flex items-center overflow-hidden bg-neutral-900">
+    <section className="relative min-h-[calc(100vh-5rem)] flex items-center overflow-hidden bg-muted/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left side - Text content */}
           <div className="z-10">
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 text-balance">
-              Distribución especializada en insumos para gastronomía oriental
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 text-balance ">
+              Distribución especializada en insumos para <span className="text-accent font-serif">gastronomía oriental</span>
             </h1>
-            <p className="text-lg md:text-xl text-neutral-200 mb-8 text-pretty">
+            <p className="text-lg md:text-xl text-muted-foreground mb-8 text-pretty">
               Desde 2016 conectamos restaurantes con los mejores productos. Trato directo, logística eficiente, precios
               mayoristas.
             </p>
-            <Button
-  size="lg"
-  asChild
-  className="
-    group relative overflow-hidden 
-    bg-accent 
-    text-accent-foreground 
-    text-lg font-semibold 
-    px-8 py-6 rounded-xl cursor-pointer 
-    shadow-lg transition-all duration-300 
-    hover:scale-105 hover:shadow-xl
-  "
->
+            <div className="flex gap-4">
+            <Button size="lg" asChild className="group relative overflow-hidden bg-accent text-accent-foreground text-lg font-semibold px-8 py-6 rounded-xl cursor-pointer shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl hover:bg-white hover:text-foreground">
   <Link href="#nuestros-servicios" className="flex items-center gap-3">
-    {/* Icono opcional al inicio */}
-    {/* <MessageCircle className="h-6 w-6" /> */}
-
-    <span className="tracking-wide">Ver más</span>
-
+    <span className="tracking-wide">Ver Servicios</span>
     {/* Flecha con animación */}
     <ArrowBigDown
       className="h-8 w-8 transition-transform duration-300 group-hover:translate-y-1 group-hover:text-accent"
     />
   </Link>
 </Button>
-
+<Button size="lg" asChild className="group relative overflow-hidden bg-white text-foreground text-lg font-semibold px-8 py-6 rounded-xl cursor-pointer shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl hover:bg-accent hover:text-accent-foreground">
+  <Link href="#catalogo" className="flex items-center gap-3">
+    <span className="tracking-wide">Catálogo</span>
+  </Link>
+</Button>
+</div>
           </div>
 
           {/* Right side - Auto-changing image gallery */}
-          <div className="relative h-[400px] md:h-[500px] rounded-2xl overflow-hidden">
+          <div className="relative h-[400px] md:h-[600px] rounded-2xl overflow-hidden">
             {images.map((image, index) => (
               <div
                 key={index}
