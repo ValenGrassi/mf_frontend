@@ -43,8 +43,19 @@ export function Suppliers() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {suppliers.map((supplier, index) => (
-            <Card key={index} className="p-8 bg-card hover:shadow-lg transition-all duration-300 hover:-translate-y-1 justify-center items-center">
-              <Image width={200} height={200} src={supplier.image} alt="imagen"/>
+            /* Añadimos la clase 'group' a la Card */
+            <Card 
+              key={index} 
+              className="group p-8 bg-card hover:shadow-lg transition-all duration-300 hover:-translate-y-1 flex flex-col justify-center items-center"
+            >
+              <Image 
+                width={200} 
+                height={200} 
+                src={supplier.image} 
+                alt={supplier.name}
+                /* Aplicamos grayscale por defecto y grayscale-0 cuando el 'group' tiene hover */
+                className="grayscale transition-all duration-500 group-hover:grayscale-0 mb-4 object-contain"
+              />
               <p className="text-sm font-semibold text-accent mb-3 text-center">{supplier.specialty}</p>
               <p className="text-muted-foreground text-center text-pretty leading-relaxed">{supplier.description}</p>
             </Card>

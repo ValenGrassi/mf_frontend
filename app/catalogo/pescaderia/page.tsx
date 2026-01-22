@@ -3,7 +3,7 @@ import { CatalogSection } from "@/components/catalog-section"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Catálogo Pescadería - Salmón, langostino, mejillón | MF Logística",
+  title: "Pescadería - Salmón, langostino, mejillón | MF Logística",
   description:
     "Distribuimos salmón, langostino, mejillón, atun y todos los ingredientes para tu restaurante de cocina coreana en Buenos Aires. Productos auténticos a precios mayoristas.",
   keywords: [
@@ -26,27 +26,27 @@ export default function CocinaCoreanaPage() {
   const products = [
     {
       category: "Salmón Entero Fresco",
-      image: "../salmon-entero.png",
+      image: "../salmon-entero.jpg",
       subtitle: "Premium Salar x KG"
     },
     {
       category: "Salmón de Penca",
-      image: "../salmon-de-penca.webp",
+      image: "../penca.jpg",
       subtitle: "x KG"
     },
     {
       category: "Salmón Ahumado Feteado",
-      image: "../salmon-feteado.webp",
+      image: "../salmon-feteado.jpg",
       subtitle: "En Penca x KG"
     },
     {
       category: "Cola de Langostino Mix en Plancha o IQF",
-      image: "../cola-langostino.jpg",
+      image: "../langostinos-cola.jpg",
       subtitle:"x KG"
     },
     {
       category:"Cola de Langostino N1 y N2 en cajitas",
-      image:"../caja-cola.webp",
+      image:"../cola-caja.jpg",
       subtitle:"x KG"
     },
     {
@@ -56,7 +56,7 @@ export default function CocinaCoreanaPage() {
     },
     {
       category:"Mejillón Pelado",
-      image:"../mejillon-pelado.webp",
+      image:"../mejillon.jpg",
       subtitle:"Chileno IQF o x KG"
     }
   ]

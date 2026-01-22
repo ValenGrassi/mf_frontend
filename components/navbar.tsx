@@ -27,8 +27,8 @@ export function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center group">
             <Image className="w-20 h-20" src={Logo} alt="logo" />
-            <span className="text-2xl font-bold text-foreground transition-colors group-hover:text-red-500">
-              MF Logística
+            <span className="text-2xl font-bold text-foreground transition-colors group-hover:text-red-500 font-serif">
+            MF Logística
             </span>
           </Link>
 
@@ -99,7 +99,7 @@ export function Navbar() {
             </Button>
 
             <Link
-              href="#como-pedir"
+              href="/#como-pedir"
               className={`text-base font-bold transition-colors hover:text-accent text-foreground/80`}
             >
               Hacer pedido

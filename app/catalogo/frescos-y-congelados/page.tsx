@@ -3,21 +3,21 @@ import { CatalogSection } from "@/components/catalog-section"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Catálogo Comida China - Ingredientes Auténticos para Restaurantes | MF Logística",
+  title: "Frescos y Congelados - Ingredientes Auténticos para Restaurantes | MF Logística",
   description:
-    "Distribuimos fideos, salsas asiáticas, vegetales orientales y todos los ingredientes para tu restaurante de comida china en Buenos Aires. Productos auténticos y precios mayoristas.",
+    "Distribuimos frescos y congelados para tu restaurante de comida china en Buenos Aires. Productos auténticos y precios mayoristas.",
   keywords: [
-    "insumos comida china",
-    "ingredientes chinos",
-    "salsa de ostras",
-    "fideos chinos",
-    "bok choy",
-    "hongos shiitake",
-    "mayorista comida china",
-    "distribución ingredientes asiáticos",
+    "frescos",
+    "congelados",
+    "frescos y congelados",
+    "comida china",
+    "sushi",
+    "pescado",
+    "atun",
+    "caviar",
   ],
   openGraph: {
-    title: "Catálogo Comida China - MF Logística",
+    title: "Frescos y Congelados - MF Logística",
     description: "Ingredientes auténticos para restaurantes de comida china en Buenos Aires",
     type: "website",
   },
@@ -26,27 +26,60 @@ export const metadata: Metadata = {
 export default function ComidaChinaPage() {
   const products = [
     {
-      category: "Carnes y Proteínas",
-      items: ["Cerdo", "Pollo", "Pato laqueado", "Carne de res", "Camarones"],
+      category: "Kanikama Largo",
+      image: "../kanikama.jpg",
+      subtitle: "Santa Elena x 600gr"
     },
     {
-      category: "Vegetales Asiáticos",
-      items: ["Bok choy", "Brotes de bambú", "Hongos shiitake", "Castañas de agua", "Col china"],
+      category: "Pulpo Español",
+      image: "../pulpo-español.jpg",
+      subtitle: "(Peso 1 a 2 KG) x KG"
     },
     {
-      category: "Salsas y Condimentos",
-      items: [
-        "Salsa de soja oscura y clara",
-        "Salsa de ostras",
-        "Aceite de sésamo",
-        "Salsa hoisin",
-        "Pasta de frijol negro",
-      ],
+      category: "Atún Rojo en Cubos",
+      image: "../atun-cubos.jpg",
+      subtitle: "(Trozos de 500 GR) x KG"
     },
     {
-      category: "Fideos y Arroz",
-      items: ["Fideos de arroz", "Fideos de huevo", "Arroz jazmín", "Papel de arroz", "Wonton wrappers"],
+      category: "Filet de Lenguado",
+      image: "../filet-leguado.jpg",
+      subtitle:"Congelado x KG"
     },
+    {
+      category:"Tubo de Calamar",
+      image:"../tubo-calamar.jpg",
+      subtitle:"Tiernizado x KG"
+    },
+    {
+      category:"Caviar Rojo",
+      image:"../caviar-rojo.jpg",
+      subtitle:"Boken (Huevas) x 320 GR"
+    },
+    {
+      category:"Caviar Negro",
+      image:"../caviar-negro.jpg",
+      subtitle:"Boken (Huevas) x 320 GR"
+    },
+    {
+      category: "Empanaditas Chinas Harumakis",
+      image: "../empanaditas.jpg",
+      subtitle:"De Carne o Verdura x 50u"
+    },
+    {
+      category:"Dumplings",
+      image:"../dumplings.jpg",
+      subtitle:"De cerdo y Choclo x 24u"
+    },
+    {
+      category:"Pechuga/Suprema de polo",
+      image:"../pechuga.jpg",
+      subtitle:"Deshuesada y Sin Piel (Presentación x 15 KG)"
+    },
+    {
+      category:"Tequeños de Queso",
+      image:"../tequeños.jpg",
+      subtitle:`"El Tovareño" x 12u`
+    }
   ]
 
   return (
@@ -54,8 +87,8 @@ export default function ComidaChinaPage() {
       <Navbar />
       <main className="min-h-screen pt-20">
         <CatalogSection
-          title="Comida China"
-          description="Todo lo necesario para tu restaurante de comida china. Ingredientes auténticos y de la más alta calidad."
+          title="Frescos y Congelados"
+          description="Todo lo necesario para tu restaurante de sushi. Ingredientes auténticos y de la más alta calidad."
           products={products}
         />
       </main>

@@ -48,7 +48,7 @@ export function CatalogSection({ title, description, products }: CatalogSectionP
   }, [selectedIndex, handleNext, handlePrev])
 
   return (
-    <section className="py-24 bg-background">
+    <section className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header Original */}
         <div className="text-center mb-16">
@@ -58,7 +58,7 @@ export function CatalogSection({ title, description, products }: CatalogSectionP
         </div>
 
         {/* Catalog Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mb-20">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-10">
           {products.map((product, index) => (
             <div key={index} className="group cursor-pointer" onClick={() => setSelectedIndex(index)}>
               <div className="relative aspect-square overflow-hidden rounded-2xl bg-muted mb-4 shadow-sm border border-border/40">
@@ -130,23 +130,6 @@ export function CatalogSection({ title, description, products }: CatalogSectionP
             </div>
           </div>
         )}
-
-        {/* CTA */}
-        <div className="text-center">
-          <Card className="p-12 bg-muted/30 border-2 border-border">
-            <h2 className="text-3xl font-bold text-foreground mb-4">¿Necesitas más información?</h2>
-            <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Contáctanos por WhatsApp para consultar disponibilidad, precios mayoristas y condiciones especiales para
-              tu restaurante.
-            </p>
-            <Button size="lg" asChild className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6">
-              <a href="https://wa.me/5491123456789" target="_blank" rel="noopener noreferrer">
-                <MessageCircle className="mr-2 h-5 w-5" />
-                Consultar por WhatsApp
-              </a>
-            </Button>
-          </Card>
-        </div>
       </div>
     </section>
   )
