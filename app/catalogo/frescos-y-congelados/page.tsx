@@ -42,7 +42,7 @@ export default function ComidaChinaPage() {
     },
     {
       category: "Filet de Lenguado",
-      image: "../filet-leguado.jpg",
+      image: "../filet-de-lenguado.jpg",
       subtitle:"Congelado x KG"
     },
     {

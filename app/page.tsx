@@ -46,7 +46,6 @@ export default function Page() {
         <CatalogPreview />
         <OrderProcess />
         <Suppliers/>
-        <Contact />
       </main>
       <script
         type="application/ld+json"

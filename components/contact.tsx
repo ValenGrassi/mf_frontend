@@ -5,20 +5,12 @@ import { MessageCircle, MapPin, Phone, Mail, Clock } from "lucide-react"
 
 export function Contact() {
   const handleWhatsApp = () => {
-    window.open("https://wa.me/5491123456789", "_blank")
+    window.open("https://wa.me/541170019828", "_blank")
   }
 
   return (
     <section className="pt-20 pb-10 bg-neutral-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Contactanos</h2>
-          <div className="w-24 h-1 bg-accent mx-auto mb-8" />
-          <p className="text-lg md:text-xl text-neutral-200 max-w-3xl mx-auto text-pretty">
-            Estamos listos para atender tu negocio. Escribinos y te respondemos a la brevedad.
-          </p>
-        </div>
-
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <div className="flex items-start gap-4">
@@ -47,7 +39,7 @@ export function Contact() {
               </div>
               <div>
                 <h3 className="text-xl font-semibold mb-2">Teléfono</h3>
-                <p className="text-neutral-300">+54 9 11 2345-6789</p>
+                <p className="text-neutral-300">+54 11 7001-9828</p>
               </div>
             </div>
 
@@ -75,7 +67,7 @@ export function Contact() {
             <Button
               size="lg"
               onClick={handleWhatsApp}
-              className="w-full bg-accent text-accent-foreground hover:bg-accent/90 text-lg py-6"
+              className="w-full bg-accent text-accent-foreground hover:bg-accent/90 text-lg py-6 cursor-pointer"
             >
               <MessageCircle className="mr-2 h-5 w-5" />
               Contactar por WhatsApp

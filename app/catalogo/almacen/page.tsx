@@ -89,7 +89,7 @@ export default function SushiJaponesPage() {
     },
     {
       category: "Atún al Agua o al Aceite",
-      image: "../lomos.jpg",
+      image: "../atun.jpg",
       subtitle:"En Pouch/Sobre x 1 KG"
     },
     {
@@ -162,7 +162,7 @@ export default function SushiJaponesPage() {
     },
     {
       category:"Repollo Colorado",
-      image:"../repollo.webp",
+      image:"../repollo.jpg",
       subtitle:"x KG"
     },
     {

@@ -26,10 +26,10 @@ export function CatalogPreview() {
   ]
 
   const featuredProducts = [
-    { name: "Papa", description: "Ideal para rolls y ensaladas", image: "/papas.webp", badge: "Nuevo" },
-    { name: "Limón", description: "Certificación premium", image: "/limon.webp", badge: "Nuevo" },
-    { name: "Merluza Premium", description: "Corte fresco de máxima calidad", image: "/merluza.png", badge: "Destacado" },
-    { name: "Set Completo Sushi", description: "Todo lo que necesitás", image: "/sushi-takeout-containers-and-boxes.jpg", badge: "Popular" },
+    { name: "Salmón", description: "Ideal para rolls y ensaladas", image: "/salmon.jpg", badge: "Popular", href:"/catalogo/pescaderia" },
+    { name: "Sachet Finlandia", description: "Certificación premium", image: "/finlandia.jpg", badge: "Popular", href:"/catalogo/almacen" },
+    { name: "Alga Yaki", description: "Corte fresco de máxima calidad", image: "/algas-yaki.jpg", badge: "Nuevo", href:"/catalogo/productos-para-sushi" },
+    { name: "Alga Yamagataya", description: "Todo lo que necesitás", image: "/algas-2.jpg", badge: "Destacado", href:"/catalogo/productos-para-sushi" },
   ]
 
   return (
@@ -76,6 +76,7 @@ export function CatalogPreview() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-20 mx-8 md:mx-0">
           {featuredProducts.map((product, index) => (
+          <Link key={index} href={product.href}>
             <Card key={index} className="group cursor-pointer overflow-hidden hover:shadow-xl transition-all duration-300 pt-0">
               <div className="relative h-40 sm:h-48 overflow-hidden">
                 <img src={product.image} alt={product.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
@@ -87,6 +88,7 @@ export function CatalogPreview() {
                 <p className="text-xs md:text-sm text-muted-foreground text-pretty">{product.description}</p>
               </div>
             </Card>
+            </Link>
           ))}
         </div>
 

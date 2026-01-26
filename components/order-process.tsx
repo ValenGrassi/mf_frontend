@@ -24,7 +24,7 @@ export function OrderProcess() {
     {
       number: "04",
       title: "Método de pago",
-      description: "Aclare si abonará en efectivo o mediante transferencia.",
+      description: "Consulte las opciones para realizar el pago.",
       icon: CreditCard,
     },
   ]

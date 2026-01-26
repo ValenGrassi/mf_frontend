@@ -41,7 +41,7 @@ export default function CocinaCoreanaPage() {
     },
     {
       category: "Cola de Langostino Mix en Plancha o IQF",
-      image: "../langostinos-cola.jpg",
+      image: "../langostino-plancha.jpg",
       subtitle:"x KG"
     },
     {
@@ -50,14 +50,14 @@ export default function CocinaCoreanaPage() {
       subtitle:"x KG"
     },
     {
-      category:"Langostinos Pelados",
+      category:"Langostinos Pelados IQF",
       image:"../langostinos-pelados.jpg",
-      subtitle:"IQF o x KG"
+      subtitle:"x KG"
     },
     {
-      category:"Mejillón Pelado",
+      category:"Mejillón Pelado Chileno IQF",
       image:"../mejillon.jpg",
-      subtitle:"Chileno IQF o x KG"
+      subtitle:"x KG"
     }
   ]
 
