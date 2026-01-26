@@ -28,7 +28,7 @@ export function CatalogPreview() {
   const featuredProducts = [
     { name: "Salmón", description: "Ideal para rolls y ensaladas", image: "/salmon.jpg", badge: "Popular", href:"/catalogo/pescaderia" },
     { name: "Sachet Finlandia", description: "Certificación premium", image: "/finlandia.jpg", badge: "Popular", href:"/catalogo/almacen" },
-    { name: "Alga Yaki", description: "Corte fresco de máxima calidad", image: "/algas-yaki.jpg", badge: "Nuevo", href:"/catalogo/productos-para-sushi" },
+    { name: "Alga Yaki", description: "Corte fresco de máxima calidad", image: "/algas-yaki.jpg", badge: "Destacado", href:"/catalogo/productos-para-sushi" },
     { name: "Alga Yamagataya", description: "Todo lo que necesitás", image: "/algas-2.jpg", badge: "Destacado", href:"/catalogo/productos-para-sushi" },
   ]
 

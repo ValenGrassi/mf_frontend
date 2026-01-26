@@ -18,6 +18,9 @@ export function Navbar() {
     { name: "Frescos y Congelados", href: "/catalogo/frescos-y-congelados" },
     { name: "Productos para Sushi", href: "/catalogo/productos-para-sushi" },
     { name: "Almacén", href: "/catalogo/almacen" },
+    { name: "Verdulería", href: "/catalogo/almacen#Verdulería" },
+    { name: "Papelería", href: "/catalogo/almacen#Papelería" },
+    { name: "Limpieza", href: "/catalogo/almacen#Limpieza" },
   ]
 
   return (
