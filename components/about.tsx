@@ -174,25 +174,6 @@ export function About() {
           </div>
         </div>
       </section>
-
-      {/* CTA Section */}
-      <section className="py-24 bg-muted/30">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Card className="p-12 bg-card text-center border-2 border-border">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">¿Listo para comenzar?</h2>
-            <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto text-pretty">
-              Contactanos hoy mismo para conocer nuestro catálogo completo, precios mayoristas y condiciones especiales
-              para tu restaurante.
-            </p>
-            <Button size="lg" asChild className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6">
-              <a href="https://wa.me/5491123456789" target="_blank" rel="noopener noreferrer">
-                <MessageCircle className="mr-2 h-5 w-5" />
-                Contactar por WhatsApp
-              </a>
-            </Button>
-          </Card>
-        </div>
-      </section>
     </>
   )
 }

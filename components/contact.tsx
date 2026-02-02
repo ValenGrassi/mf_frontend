@@ -58,7 +58,7 @@ export function Contact() {
           <div className="bg-neutral-800 rounded-2xl p-8 md:p-12">
             <h3 className="text-3xl font-bold mb-4">Empezá a trabajar con nosotros</h3>
             <p className="text-neutral-300 mb-8 text-pretty leading-relaxed">
-              Más de 8 años de experiencia nos respaldan. Somos especialistas en distribución para restaurantes de
+              Más de 9 años de experiencia nos respaldan. Somos especialistas en distribución para restaurantes de
               cocina oriental en Buenos Aires.
             </p>
             <p className="text-neutral-300 mb-8 text-pretty leading-relaxed">
