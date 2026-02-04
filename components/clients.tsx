@@ -2,28 +2,30 @@
 import { Card } from "@/components/ui/card"
 import Image from "next/image"
 
-export function Suppliers() {
-  const suppliers = [
+export function Clients() {
+  const clients = [
     {
-      name: "La Serenísima",
-      image:"./serenisima.png",
-      specialty: "Lácteos y Quesos",
+      name: "Golden Dragon Trading",
+      image:"./logo.png",
+      specialty: "Sushi & Productos Japoneses",
+      description: "Importador directo de productos premium japoneses",
     },
     {
-      name: "Chango",
-      specialty: "Azucar, Endulzantes y Repostería",
-      image:"./chango.jpg",
+      name: "Asian Foods Import",
+      specialty: "Comida China & Coreana",
+      image:"./logo.png",
+      description: "Proveedor líder de ingredientes auténticos asiáticos",
     },
     {
-      name: "Menoyo",
-      image:"./menoyo.webp",
-      specialty: "Aderezos, Vinagres, Aceites y Especias",
+      name: "Thai Express Wholesale",
+      image:"./logo.png",
+      specialty: "Cocina Tailandesa",
       description: "Especialistas en productos tailandeses y del sudeste asiático",
     },
     {
-      name: "Bandex",
-      image:"./bandex.jpg",
-      specialty: "Bandejas y Packaging",
+      name: "Orient Market Suppliers",
+      image:"./logo.png",
+      specialty: "Productos Orientales Variados",
       description: "Amplio catálogo de productos de toda Asia",
     },
   ]
@@ -32,15 +34,15 @@ export function Suppliers() {
     <section className="py-24 bg-muted/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 text-balance">Nuestros Proveedores</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 text-balance">Nuestros Clientes</h2>
           <div className="w-24 h-1 bg-accent mx-auto mb-6" />
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
-            Trabajamos con los mejores proveedores del mercado para garantizar productos de primera calidad
+          Locales de sushi que confían en nuestra calidad y experiencia
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {suppliers.map((supplier, index) => (
+          {clients.map((client, index) => (
             /* Añadimos la clase 'group' a la Card */
             <Card 
               key={index} 
@@ -49,12 +51,13 @@ export function Suppliers() {
               <Image 
                 width={200} 
                 height={200} 
-                src={supplier.image} 
-                alt={supplier.name}
+                src={client.image} 
+                alt={client.name}
                 /* Aplicamos grayscale por defecto y grayscale-0 cuando el 'group' tiene hover */
                 className="grayscale transition-all duration-500 group-hover:grayscale-0 mb-4 object-contain"
               />
-              <p className="text-sm font-semibold text-accent mb-3 text-center">{supplier.specialty}</p>
+              <p className="text-sm font-semibold text-accent mb-3 text-center">{client.specialty}</p>
+              <p className="text-muted-foreground text-center text-pretty leading-relaxed">{client.description}</p>
             </Card>
           ))}
         </div>
