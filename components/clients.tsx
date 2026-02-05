@@ -6,27 +6,39 @@ export function Clients() {
   const clients = [
     {
       name: "Golden Dragon Trading",
-      image:"./logo.png",
-      specialty: "Sushi & Productos Japoneses",
-      description: "Importador directo de productos premium japoneses",
+      image:"./mein.jpeg",
+      specialty: "Mein Sushi",
+      description: "Restaurante de sushi en Flores y Villa Crespo",
     },
     {
       name: "Asian Foods Import",
-      specialty: "Comida China & Coreana",
-      image:"./logo.png",
-      description: "Proveedor líder de ingredientes auténticos asiáticos",
+      specialty: "Obasan Sushi",
+      image:"./obasan.jpeg",
+      description: "Restaurante de sushi en Villa Adelina",
     },
     {
       name: "Thai Express Wholesale",
-      image:"./logo.png",
-      specialty: "Cocina Tailandesa",
-      description: "Especialistas en productos tailandeses y del sudeste asiático",
+      image:"./sushi-world.jpeg",
+      specialty: "Sushi World",
+      description: "Restaurante de comida china y japonesa en Santiago del Estero, Córdoba y Buenos Aires",
     },
     {
       name: "Orient Market Suppliers",
-      image:"./logo.png",
-      specialty: "Productos Orientales Variados",
-      description: "Amplio catálogo de productos de toda Asia",
+      image:"./jochito.jpg",
+      specialty: "Jochito Sushi",
+      description: "Restaurante de sushi omakese en Coghlan",
+    },
+    {
+      name: "Thai Express Wholesale",
+      image:"./sushi-lives.jpg",
+      specialty: "Sushi Lives",
+      description: "Restaurante de sushi en Colegiales, Recoleta, Villa Urquiza y Caballito",
+    },
+    {
+      name: "Orient Market Suppliers",
+      image:"./zhao.jpg",
+      specialty: "Zhao",
+      description: "Restaurante de sushi en Pilar, Tigre, San Sebastián y Escobar",
     },
   ]
 
@@ -37,7 +49,7 @@ export function Clients() {
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 text-balance">Nuestros Clientes</h2>
           <div className="w-24 h-1 bg-accent mx-auto mb-6" />
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
-          Locales de sushi que confían en nuestra calidad y experiencia
+          Locales que confían en nuestra calidad y experiencia
           </p>
         </div>
 
