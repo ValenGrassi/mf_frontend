@@ -52,7 +52,7 @@ export function Suppliers() {
                 src={supplier.image} 
                 alt={supplier.name}
                 /* Aplicamos grayscale por defecto y grayscale-0 cuando el 'group' tiene hover */
-                className="grayscale transition-all duration-500 group-hover:grayscale-0 mb-4 object-contain"
+                className="transition-all duration-500 mb-4 object-contain"
               />
               <p className="text-sm font-semibold text-accent mb-3 text-center">{supplier.specialty}</p>
             </Card>

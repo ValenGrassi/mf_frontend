@@ -20,7 +20,7 @@ export function Clients() {
       name: "Thai Express Wholesale",
       image:"./sushi-world.jpeg",
       specialty: "Sushi World",
-      description: "Restaurante de comida china y japonesa en Santiago del Estero, Córdoba y Buenos Aires",
+      description: "Restaurante de comida china y japonesa en Capital Federal",
     },
     {
       name: "Orient Market Suppliers",
@@ -66,7 +66,7 @@ export function Clients() {
                 src={client.image} 
                 alt={client.name}
                 /* Aplicamos grayscale por defecto y grayscale-0 cuando el 'group' tiene hover */
-                className="grayscale transition-all duration-500 group-hover:grayscale-0 mb-4 object-contain"
+                className="transition-all duration-500 mb-4 object-contain"
               />
               <p className="text-sm font-semibold text-accent mb-3 text-center">{client.specialty}</p>
               <p className="text-muted-foreground text-center text-pretty leading-relaxed">{client.description}</p>
