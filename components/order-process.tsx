@@ -52,7 +52,7 @@ export function OrderProcess() {
       <Card className="relative p-8 h-full bg-card border-none shadow-none hover:bg-muted/30 transition-all duration-500 rounded-3xl group">
         {/* Número de paso estilizado */}
         <div className="absolute top-6 right-8">
-          <span className="text-6xl font-black text-foreground/[0.03] group-hover:text-accent/10 transition-colors">
+          <span className="text-6xl font-black text-accent/20 group-hover:text-accent/80 transition-colors">
             {step.number}
           </span>
         </div>

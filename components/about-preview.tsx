@@ -18,7 +18,7 @@ export function AboutPreview() {
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Quiénes Somos</h2>
             <div className="w-24 h-1 bg-accent mb-8" />
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed text-pretty">
-              Somos <strong className="text-foreground">MF Logística</strong>, una empresa argentina especializada en la
+              Somos una empresa argentina especializada en la
               distribución mayorista de productos para restaurantes de sushi.
             </p>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed text-pretty">

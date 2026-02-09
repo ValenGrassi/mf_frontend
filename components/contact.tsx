@@ -20,7 +20,7 @@ export function Contact() {
                 <div>
                   <h3 className="text-xl font-semibold mb-2">Horarios</h3>
                   <p className="text-neutral-300">Lunes a Sábados</p>
-                  <p className="text-neutral-300">8:00hs a 14:30hs</p>
+                  <p className="text-neutral-300">8:00hs a 15:30hs</p>
                 </div>
               </div>
             <div className="flex items-start gap-4">
@@ -29,7 +29,7 @@ export function Contact() {
               </div>
               <div>
                 <h3 className="text-xl font-semibold mb-2">Zona de Cobertura</h3>
-                <p className="text-neutral-300 text-pretty">CABA y Área Metropolitana de Buenos Aires (AMBA)</p>
+                <p className="text-neutral-300 text-pretty">CABA y Área Metropolitana de Buenos Aires (consultar otras localidades)</p>
               </div>
             </div>
 
@@ -39,7 +39,7 @@ export function Contact() {
               </div>
               <div>
                 <h3 className="text-xl font-semibold mb-2">Teléfono</h3>
-                <p className="text-neutral-300">+54 11 7001-9828</p>
+                <a href="tel:+541170019828" className="text-neutral-300">+54 11 7001-9828</a>
               </div>
             </div>
 
@@ -49,7 +49,7 @@ export function Contact() {
               </div>
               <div>
                 <h3 className="text-xl font-semibold mb-2">Email</h3>
-                <p className="text-neutral-300">info@mflogistica.com.ar</p>
+                <a href="mailto:m.f.logistica16@gmail.com" target="_blank" className="text-neutral-300">m.f.logistica16@gmail.com</a>
               </div>
             </div>
             
@@ -58,11 +58,7 @@ export function Contact() {
           <div className="bg-neutral-800 rounded-2xl p-8 md:p-12">
             <h3 className="text-3xl font-bold mb-4">Empezá a trabajar con nosotros</h3>
             <p className="text-neutral-300 mb-8 text-pretty leading-relaxed">
-              Más de 9 años de experiencia nos respaldan. Somos especialistas en distribución para restaurantes de
-              cocina oriental en Buenos Aires.
-            </p>
-            <p className="text-neutral-300 mb-8 text-pretty leading-relaxed">
-              Trato directo, entregas puntuales y los mejores precios mayoristas del mercado.
+              Productos de calidad, trato directo, entregas puntuales y los mejores precios mayoristas del mercado.
             </p>
             <Button
               size="lg"

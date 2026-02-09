@@ -46,7 +46,7 @@ export function Clients() {
     <section className="py-24 bg-muted/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 text-balance">Nuestros Clientes</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 text-balance">Algunas de las Marcas que Confían en Nosotros</h2>
           <div className="w-24 h-1 bg-accent mx-auto mb-6" />
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
           Locales que confían en nuestra calidad y experiencia
@@ -69,7 +69,6 @@ export function Clients() {
                 className="transition-all duration-500 mb-4 object-contain"
               />
               <p className="text-sm font-semibold text-accent mb-3 text-center">{client.specialty}</p>
-              <p className="text-muted-foreground text-center text-pretty leading-relaxed">{client.description}</p>
             </Card>
           ))}
         </div>

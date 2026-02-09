@@ -54,7 +54,7 @@ export function Suppliers() {
                 /* Aplicamos grayscale por defecto y grayscale-0 cuando el 'group' tiene hover */
                 className="transition-all duration-500 mb-4 object-contain"
               />
-              <p className="text-sm font-semibold text-accent mb-3 text-center">{supplier.specialty}</p>
+              <p className="text-sm font-semibold text-foreground mb-3 text-center">{supplier.specialty}</p>
             </Card>
           ))}
         </div>

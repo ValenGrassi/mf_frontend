@@ -168,7 +168,7 @@ export function About() {
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-3">Experiencia</h3>
               <p className="text-muted-foreground text-pretty leading-relaxed">
-                Más de 8 años en el sector gastronómico oriental
+                Más de 9 años en el sector gastronómico oriental
               </p>
             </Card>
           </div>

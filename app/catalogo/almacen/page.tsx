@@ -356,7 +356,7 @@ export default function SushiJaponesPage() {
       <main className="min-h-screen pt-20">
         <CatalogSection
           title="Almacén"
-          description="Insumos de primera calidad para restaurantes de sushi. Desde productos de almacén, papelería y limpieza hasta verduras."
+          description="Insumos de primera calidad."
           products={products}
         />
         <CatalogSection
@@ -366,7 +366,7 @@ export default function SushiJaponesPage() {
         />
         <CatalogSection
           title="Papelería"
-          description="Papelería de primera calidad para restaurantes de sushi. Desde palta frescos hasta flores comestibles."
+          description="Papelería de primera calidad para restaurantes de sushi."
           products={products3}
         />
         <CatalogSection
