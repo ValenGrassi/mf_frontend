@@ -29,7 +29,7 @@ export default function CocinaCoreanaPage() {
   const products = [
     {
       category: "Salmón Entero Fresco",
-      image: "../salmon-entero.jpg",
+      image: "../salmon.jpeg",
       subtitle: "Premium Salar x KG"
     },
     {
@@ -39,7 +39,7 @@ export default function CocinaCoreanaPage() {
     },
     {
       category: "Salmón Ahumado Feteado",
-      image: "../salmon-feteado.jpg",
+      image: "../salmon-ahumado.jpeg",
       subtitle: "En Penca x KG"
     },
     {

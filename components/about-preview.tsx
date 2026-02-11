@@ -9,7 +9,7 @@ export function AboutPreview() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="relative">
             <img
-              src="/hero1.jpg"
+              src="/hero2.jpeg"
               alt="Equipo de MF Logística"
               className="rounded-2xl shadow-2xl w-full h-[500px] object-cover"
             />

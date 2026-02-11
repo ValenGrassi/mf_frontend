@@ -35,22 +35,22 @@ export default function ComidaChinaPage() {
     },
     {
       category: "Pulpo Español",
-      image: "../pulpo-español.jpg",
+      image: "../pulpo-español.jpeg",
       subtitle: "(Peso 1 a 2 KG) x KG"
     },
     {
       category: "Atún Rojo en Cubos",
-      image: "../atun-cubos.jpg",
+      image: "../atun-cubos.jpeg",
       subtitle: "(Trozos de 500 GR) x KG"
     },
     {
       category: "Filet de Lenguado",
-      image: "../filet-de-lenguado.jpg",
+      image: "../filet-de-lenguado.jpeg",
       subtitle:"Congelado x KG"
     },
     {
       category:"Tubo de Calamar",
-      image:"../tubo-calamar.jpg",
+      image:"../tubo-de-calamar.jpeg",
       subtitle:"Tiernizado x KG"
     },
     {

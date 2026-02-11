@@ -70,7 +70,7 @@ export default function CocinaTailandesaPage() {
     },
     {
       category:"Salsa de Ostras",
-      image:"../ostras.jpg",
+      image:"../ostras.png",
       subtitle:`"Haday" x 2.27 KG`
     },
     {

@@ -1,6 +1,8 @@
 "use client"
 import { Card } from "@/components/ui/card"
 import Image from "next/image"
+import { Button } from "./ui/button"
+import Link from "next/link"
 
 export function Clients() {
   const clients = [
@@ -28,25 +30,13 @@ export function Clients() {
       specialty: "Jochito Sushi",
       description: "Restaurante de sushi omakese en Coghlan",
     },
-    {
-      name: "Thai Express Wholesale",
-      image:"./sushi-lives.jpg",
-      specialty: "Sushi Lives",
-      description: "Restaurante de sushi en Colegiales, Recoleta, Villa Urquiza y Caballito",
-    },
-    {
-      name: "Orient Market Suppliers",
-      image:"./zhao.jpg",
-      specialty: "Zhao",
-      description: "Restaurante de sushi en Pilar, Tigre, San Sebastián y Escobar",
-    },
   ]
 
   return (
-    <section className="py-24 bg-muted/30">
+    <section className="pt-24 bg-muted/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 text-balance">Algunas de las Marcas que Confían en Nosotros</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 text-balance">Algunos de Nuestros Clientes</h2>
           <div className="w-24 h-1 bg-accent mx-auto mb-6" />
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
           Locales que confían en nuestra calidad y experiencia
@@ -72,6 +62,11 @@ export function Clients() {
             </Card>
           ))}
         </div>
+        <div className="text-center mt-8">
+        <Button asChild size="lg" className="bg-accent hover:bg-accent/90">
+              <Link href="/quienes-somos#clientes">Ver la Lista Completa</Link>
+            </Button>
+            </div>
       </div>
     </section>
   )

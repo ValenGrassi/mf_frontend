@@ -62,7 +62,7 @@ export function CatalogSection({ title, description, products }: CatalogSectionP
           {products.map((product, index) => (
             <div key={index} className="group cursor-pointer" onClick={() => setSelectedIndex(index)}>
               <div className="relative aspect-square overflow-hidden rounded-2xl bg-muted mb-4 shadow-sm border border-border/40">
-                <Image src={product.image} fill alt={product.category} className="object-cover transition-transform duration-700 group-hover:scale-105" />
+                <Image src={product.image} fill alt={product.category} className=" transition-transform duration-700 group-hover:scale-105" />
               </div>
               <h3 className="text-xl font-bold text-foreground group-hover:text-accent transition-colors text-center">{product.category}</h3>
               <p className="text-sm md:text-base text-muted-foreground text-pretty leading-relaxed text-center">{product.subtitle}</p>
