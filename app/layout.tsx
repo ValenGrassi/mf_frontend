@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     "Especialistas en distribución de insumos para restaurantes de cocina oriental en CABA y AMBA. Trato directo, logística eficiente y precios mayoristas desde 2016.",
   generator: "v0.app",
   icons: {
-    icon: "icon.png",
+    icon: "/icon.png",
     apple: "/apple-icon.png",
   },
 }

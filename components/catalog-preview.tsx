@@ -11,18 +11,18 @@ export function CatalogPreview() {
 
   const categories = [
     { icon: FishSymbol, title: "Pescadería", description: "Salmón, langostino, mejillón...", href: "/catalogo/pescaderia", image: "/pescaderia-catalogo.png" },
-    { icon: Refrigerator, title: "Frescos y Congelados", description: "Caviar, kanikama, pulpo, atún...", href: "/catalogo/frescos-y-congelados", image: "/frozen-seafood-for-sushi-restaurant.jpg" },
-    { icon: Flame, title: "Productos para Sushi", description: "Arroz, algas, soja, salsas...", href: "/catalogo/productos-para-sushi", image: "/nori-seaweed-sheets-for-sushi.jpg" },
-    { icon: Store, title: "Almacén", description: "Condimentos, verdulería.", href: "/catalogo/almacen", image: "/almacen.png" },
-    { icon: UtensilsCrossed, title: "Papelería", description: "Insumos para delivery.", href: "/catalogo/almacen#papeleria", image: "/almacen.png" },
-    { icon: Droplets, title: "Limpieza", description: "Higiene y seguridad.", href: "/catalogo/almacen#limpieza", image: "/almacen.png" },
+    { icon: Refrigerator, title: "Frescos y Congelados", description: "Caviar, kanikama, pulpo, atún...", href: "/catalogo/pescaderia#Frescos y Congelados", image: "/frozen-seafood-for-sushi-restaurant.jpg" },
+    { icon: Flame, title: "Productos para Sushi", description: "Arroz, algas, soja, salsas...", href: "/catalogo/productos-para-sushi", image: "/productos-sushi.jpeg" },
+    { icon: Store, title: "Almacén", description: "Condimentos, verdulería.", href: "/catalogo/almacen", image: "/almacen.jpeg" },
+    { icon: UtensilsCrossed, title: "Papelería", description: "Bandejas, bolsas, rollos…", href: "/catalogo/papeleria-y-limpieza", image: "/papeleria.jpeg" },
+    { icon: Droplets, title: "Limpieza", description: "Detergente, lavandina, desengrasante…", href: "/catalogo/papeleria-y-limpieza#Limpieza", image: "/limpieza.jpeg" },
   ]
 
   const featuredProducts = [
     { name: "Salmón", description: "Premium Salar x KG", image: "/salmon.jpg", badge: "Popular", href:"/catalogo/pescaderia" },
     { name: "Sachet Finlandia", description: "Serenísima x 2KG c/ Manga", image: "/finlandia.jpg", badge: "Popular", href:"/catalogo/almacen" },
     { name: "Alga Yaki", description: "Paquete Blanco x 100 Láminas", image: "/algas-yaki.jpg", badge: "Destacado", href:"/catalogo/productos-para-sushi" },
-    { name: "Alga Yamagataya", description: "Paquete Rojo x 100 Láminas", image: "/algas-2.jpg", badge: "Destacado", href:"/catalogo/productos-para-sushi" },
+    { name: "Vinagre de Alcohol", description: "Menoyo x 5lts", image: "/vinagre-menoyo.jpg", badge: "Destacado", href:"/catalogo/almacen" },
   ]
   const scroll = (direction: 'left' | 'right') => {
     if (scrollContainerRef.current) {

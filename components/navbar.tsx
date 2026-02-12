@@ -15,12 +15,12 @@ export function Navbar() {
 
   const catalogSections = [
     { name: "Pescadería", href: "/catalogo/pescaderia" },
-    { name: "Frescos y Congelados", href: "/catalogo/frescos-y-congelados" },
+    { name: "Frescos y Congelados", href: "/catalogo/pescaderia#Frescos y Congelados" },
     { name: "Productos para Sushi", href: "/catalogo/productos-para-sushi" },
     { name: "Almacén", href: "/catalogo/almacen" },
     { name: "Verdulería", href: "/catalogo/almacen#Verdulería" },
-    { name: "Papelería", href: "/catalogo/almacen#Papelería" },
-    { name: "Limpieza", href: "/catalogo/almacen#Limpieza" },
+    { name: "Papelería", href: "/catalogo/papeleria-y-limpieza" },
+    { name: "Limpieza", href: "/catalogo/papeleria-y-limpieza#Limpieza" },
   ]
 
   return (

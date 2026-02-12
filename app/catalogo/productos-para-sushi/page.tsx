@@ -166,7 +166,8 @@ export default function CocinaTailandesaPage() {
       <main className="min-h-screen pt-20">
         <CatalogSection
           title="Productos para Sushi"
-          description="Productos para tu restaurante de sushi. Arroz, algas, soja, palillos y mucho más."
+          description=" Insumos importados premium para sushi en presentaciones mayoristas. Calidad uniforme y abastecimiento constante para una producción sin interrupciones.  
+          "
           products={products}
         />
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center pb-20"> 
@@ -176,11 +177,11 @@ export default function CocinaTailandesaPage() {
           asChild 
           className="group relative h-auto px-10 py-5 bg-accent text-white text-base font-medium rounded-lg shadow-sm transition-all duration-500 ease-in-out hover:bg-accent hover:opacity-90 hover:shadow-lg hover:-translate-y-0.5"
         >
-          <Link href="./frescos-y-congelados" className="flex items-center gap-3">
+          <Link href="./pescaderia" className="flex items-center gap-3">
             <ChevronLeft
               className="h-4 w-4 transition-transform duration-300 ease-out group-hover:translate-x-1.5" 
             />
-            <span className="tracking-tight">Ir a frescos y congelados</span>
+            <span className="tracking-tight">Ir a pescadería</span>
           </Link>
         </Button>
         {/* Botón Productos para Sushi - Estilo Secundario Sobrio */}

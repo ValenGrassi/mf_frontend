@@ -34,7 +34,7 @@ export default function CocinaCoreanaPage() {
     },
     {
       category: "Salmón de Penca",
-      image: "../penca.jpg",
+      image: "../salmon-en-penca.jpeg",
       subtitle: "x KG"
     },
     {
@@ -64,14 +64,79 @@ export default function CocinaCoreanaPage() {
     }
   ]
 
+  const products2 = [
+    {
+      category: "Kanikama Largo",
+      image: "../kanikama.jpg",
+      subtitle: "Santa Elena x 600gr"
+    },
+    {
+      category: "Pulpo Español",
+      image: "../pulpo-español.jpeg",
+      subtitle: "(Peso 1 a 2 KG) x KG"
+    },
+    {
+      category: "Atún Rojo en Cubos",
+      image: "../atun-cubos.jpeg",
+      subtitle: "(Trozos de 500 GR) x KG"
+    },
+    {
+      category: "Filet de Lenguado",
+      image: "../filet-de-lenguado.jpeg",
+      subtitle:"Congelado x KG"
+    },
+    {
+      category:"Tubo de Calamar",
+      image:"../tubo-de-calamar.jpeg",
+      subtitle:"Tiernizado x KG"
+    },
+    {
+      category:"Caviar Rojo",
+      image:"../caviar-rojo.jpg",
+      subtitle:"Boken (Huevas) x 320 GR"
+    },
+    {
+      category:"Caviar Negro",
+      image:"../caviar-negro.jpg",
+      subtitle:"Boken (Huevas) x 320 GR"
+    },
+    {
+      category: "Empanaditas Chinas Harumakis",
+      image: "../empanaditas.jpg",
+      subtitle:"De Carne o Verdura x 50u"
+    },
+    {
+      category:"Dumplings",
+      image:"../dumplings.jpg",
+      subtitle:"De cerdo y Choclo x 24u"
+    },
+    {
+      category:"Pechuga/Suprema de polo",
+      image:"../pechuga.jpg",
+      subtitle:"Deshuesada y Sin Piel (Presentación x 15 KG)"
+    },
+    {
+      category:"Tequeños de Queso",
+      image:"../tequeños.jpg",
+      subtitle:`"El Tovareño" x 12u`
+    }
+  ]
+
   return (
     <>
       <Navbar />
       <main className="min-h-screen pt-20">
         <CatalogSection
           title="Pescadería"
-          description="Pescados frescos con precios de mayorista. Desde atún hasta salmón para hacer lo mejor de tu sushi."
+          description="Pescados seleccionados para uso gastronómico profesional. Cortes frescos y congelados ideales para sushi, con calidad constante y abastecimiento mayorista.
+          "
           products={products}
+        />
+        <CatalogSection
+          title="Frescos y Congelados"
+          description="Productos refrigerados y congelados pensados para la dinámica diaria de tu cocina. Conservación óptima, rendimiento y disponibilidad asegurada.
+          "
+          products={products2}
         />
       <div className="flex flex-col sm:flex-row gap-6 justify-center items-center pb-20"> 
         {/* Botón Frescos y Congelados - Estilo Principal Sobrio */}
@@ -80,11 +145,11 @@ export default function CocinaCoreanaPage() {
           asChild 
           className="group relative h-auto px-10 py-5 bg-accent text-white text-base font-medium rounded-lg shadow-sm transition-all duration-500 ease-in-out hover:bg-accent hover:opacity-90 hover:shadow-lg hover:-translate-y-0.5"
         >
-          <Link href="./frescos-y-congelados" className="flex items-center gap-3">
+          <Link href="./almacen" className="flex items-center gap-3">
             <ChevronLeft 
               className="h-4 w-4 transition-transform duration-300 ease-out group-hover:translate-x-1.5" 
             />
-            <span className="tracking-tight">Ir a frescos y congelados</span>
+            <span className="tracking-tight">Ir a almacén</span>
           </Link>
         </Button>
         {/* Botón Productos para Sushi - Estilo Secundario Sobrio */}

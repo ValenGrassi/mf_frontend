@@ -40,18 +40,18 @@ export function Hero() {
               Desde 2016 conectamos restaurantes con los mejores productos. Trato directo, logística eficiente, precios
               mayoristas.
             </p>
-            <div className="flex gap-4">
+            <div className="flex flex-col gap-4">
+              <Button size="lg" asChild className="group relative overflow-hidden bg-accent text-white text-lg font-semibold px-8 py-6 rounded-xl cursor-pointer shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl hover:bg-white hover:text-foreground">
+                <Link href="#catalogo" className="flex items-center gap-3">
+                  <span className="tracking-wide">Catálogo</span>
+                </Link>
+              </Button>
               <Button size="lg" asChild className="group relative overflow-hidden bg-white text-foreground text-lg font-semibold px-8 py-6 rounded-xl cursor-pointer shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl hover:bg-accent hover:text-white">
                 <Link href="#nuestros-servicios" className="flex items-center gap-3">
                   <span className="tracking-wide">Ver Servicios</span>
                   <ArrowBigDown
                     className="h-8 w-8 transition-transform duration-300 group-hover:translate-y-1 group-hover:text-white"
                   />
-                </Link>
-              </Button>
-              <Button size="lg" asChild className="group relative overflow-hidden bg-accent text-white text-lg font-semibold px-8 py-6 rounded-xl cursor-pointer shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl hover:bg-white hover:text-foreground">
-                <Link href="#catalogo" className="flex items-center gap-3">
-                  <span className="tracking-wide">Catálogo</span>
                 </Link>
               </Button>
             </div>
