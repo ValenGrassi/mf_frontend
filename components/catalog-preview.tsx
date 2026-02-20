@@ -1,7 +1,7 @@
 "use client"
 
 import { Card } from "@/components/ui/card"
-import { UtensilsCrossed, Flame, MessageCircle, Sparkles, FishSymbol, Refrigerator, Store, ChevronLeft, ChevronRight, Droplets } from "lucide-react"
+import { UtensilsCrossed, Flame, MessageCircle, Sparkles, FishSymbol, Refrigerator, Store, ChevronLeft, ChevronRight, Droplets, PackageOpen } from "lucide-react"
 import Link from "next/link"
 import { Button } from "./ui/button"
 import React, { useRef } from "react"
@@ -14,7 +14,7 @@ export function CatalogPreview() {
     { icon: Refrigerator, title: "Frescos y Congelados", description: "Caviar, kanikama, pulpo, atún...", href: "/catalogo/pescaderia#Frescos y Congelados", image: "/frozen-seafood-for-sushi-restaurant.jpg" },
     { icon: Flame, title: "Productos para Sushi", description: "Arroz, algas, soja, salsas...", href: "/catalogo/productos-para-sushi", image: "/productos-sushi.jpeg" },
     { icon: Store, title: "Almacén", description: "Condimentos, verdulería.", href: "/catalogo/almacen", image: "/almacen.jpeg" },
-    { icon: UtensilsCrossed, title: "Papelería", description: "Bandejas, bolsas, rollos…", href: "/catalogo/papeleria-y-limpieza", image: "/papeleria.jpeg" },
+    { icon: PackageOpen, title: "Papelería", description: "Bandejas, bolsas, rollos…", href: "/catalogo/papeleria-y-limpieza", image: "/papeleria.jpeg" },
     { icon: Droplets, title: "Limpieza", description: "Detergente, lavandina, desengrasante…", href: "/catalogo/papeleria-y-limpieza#Limpieza", image: "/limpieza.jpeg" },
   ]
 
@@ -146,7 +146,7 @@ export function CatalogPreview() {
             ¿Necesitás más información?
           </h3>
           <p className="text-muted-foreground mb-6 text-lg text-pretty">
-            Contactanos por WhatsApp para recibir el catálogo completo.
+            Contactanos por WhatsApp para recibir la lista de precios.
           </p>
           <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
             <MessageCircle className="mr-2 h-5 w-5" />

@@ -80,6 +80,84 @@ export default function QuienesSomosPage() {
       specialty: "Zhao",
       description: "Restaurante de sushi en Pilar, Tigre, San Sebastián y Escobar",
     },
+    {
+      name: "Orient Market Suppliers",
+      image:"./delsushi.jpeg",
+      specialty: "Zhao",
+      description: "Restaurante de sushi en Pilar, Tigre, San Sebastián y Escobar",
+    },
+    {
+      name: "Orient Market Suppliers",
+      image:"./elfuego.jpeg",
+      specialty: "Zhao",
+      description: "Restaurante de sushi en Pilar, Tigre, San Sebastián y Escobar",
+    },
+    {
+      name: "Orient Market Suppliers",
+      image:"./fukui.jpeg",
+      specialty: "Zhao",
+      description: "Restaurante de sushi en Pilar, Tigre, San Sebastián y Escobar",
+    },
+    {
+      name: "Orient Market Suppliers",
+      image:"./golden.jpeg",
+      specialty: "Zhao",
+      description: "Restaurante de sushi en Pilar, Tigre, San Sebastián y Escobar",
+    },
+    {
+      name: "Orient Market Suppliers",
+      image:"./hamaita.jpeg",
+      specialty: "Zhao",
+      description: "Restaurante de sushi en Pilar, Tigre, San Sebastián y Escobar",
+    },
+    {
+      name: "Orient Market Suppliers",
+      image:"./kandai.jpeg",
+      specialty: "Zhao",
+      description: "Restaurante de sushi en Pilar, Tigre, San Sebastián y Escobar",
+    },
+    {
+      name: "Orient Market Suppliers",
+      image:"./kazoku.jpeg",
+      specialty: "Zhao",
+      description: "Restaurante de sushi en Pilar, Tigre, San Sebastián y Escobar",
+    },
+    {
+      name: "Orient Market Suppliers",
+      image:"./leandro.jpeg",
+      specialty: "Zhao",
+      description: "Restaurante de sushi en Pilar, Tigre, San Sebastián y Escobar",
+    },
+    {
+      name: "Orient Market Suppliers",
+      image:"./namida.jpeg",
+      specialty: "Zhao",
+      description: "Restaurante de sushi en Pilar, Tigre, San Sebastián y Escobar",
+    },
+    {
+      name: "Orient Market Suppliers",
+      image:"./pedisushi.jpeg",
+      specialty: "Zhao",
+      description: "Restaurante de sushi en Pilar, Tigre, San Sebastián y Escobar",
+    },
+    {
+      name: "Orient Market Suppliers",
+      image:"./sushifox.jpeg",
+      specialty: "Zhao",
+      description: "Restaurante de sushi en Pilar, Tigre, San Sebastián y Escobar",
+    },
+    {
+      name: "Orient Market Suppliers",
+      image:"./toosushi.jpeg",
+      specialty: "Zhao",
+      description: "Restaurante de sushi en Pilar, Tigre, San Sebastián y Escobar",
+    },
+    {
+      name: "Orient Market Suppliers",
+      image:"./wasabi.jpeg",
+      specialty: "Zhao",
+      description: "Restaurante de sushi en Pilar, Tigre, San Sebastián y Escobar",
+    },
   ]
   return (
     <>
