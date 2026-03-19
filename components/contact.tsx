@@ -72,7 +72,7 @@ export function Contact() {
         </div>
 
         <div className="mt-16 pt-12 border-t border-neutral-700 text-center">
-          <p className="text-neutral-400">© 2026 MF Logística. Todos los derechos reservados.</p>
+          <p className="text-neutral-400">© 2026 MF Logística · Desarrollado por <a href="https://allworks.com.ar" target="_blank" className="hover:underline">All Works Pages</a>.</p>
         </div>
       </div>
     </section>
