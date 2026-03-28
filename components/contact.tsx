@@ -4,44 +4,58 @@ import { Button } from "@/components/ui/button"
 import { MessageCircle, MapPin, Phone, Mail, Clock } from "lucide-react"
 
 export function Contact() {
-  const handleWhatsApp = () => {
-    window.open("https://wa.me/541170019828", "_blank")
+
+  const handleMail = () => {
+    const subject = encodeURIComponent("Consulta desde la web")
+    const body = encodeURIComponent(
+      "Hola! Quisiera recibir información sobre sus servicios.\n\nNombre:\nEmpresa:\nTeléfono:"
+    )
+
+    window.location.href = `mailto:m.f.logistica16@gmail.com?subject=${subject}&body=${body}`
   }
 
   return (
     <section className="pt-20 pb-10 bg-neutral-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          
+          {/* INFO */}
           <div className="space-y-8">
+            
             <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <Clock className="h-6 w-6 text-accent" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-2">Horarios</h3>
-                  <p className="text-neutral-300">Lunes a Sábados</p>
-                  <p className="text-neutral-300">8:00hs a 15:30hs</p>
-                </div>
+              <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                <Clock className="h-6 w-6 text-accent" />
               </div>
+              <div>
+                <h3 className="text-xl font-semibold mb-2">Horarios</h3>
+                <p className="text-neutral-300">Lunes a Sábados</p>
+                <p className="text-neutral-300">8:00hs a 15:30hs</p>
+              </div>
+            </div>
+
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
                 <MapPin className="h-6 w-6 text-accent" />
               </div>
               <div>
                 <h3 className="text-xl font-semibold mb-2">Zona de Cobertura</h3>
-                <p className="text-neutral-300 text-pretty">CABA y Área Metropolitana de Buenos Aires (consultar otras localidades)</p>
+                <p className="text-neutral-300 text-pretty">
+                  CABA y Área Metropolitana de Buenos Aires (consultar otras localidades)
+                </p>
               </div>
             </div>
 
-            <div className="flex items-start gap-4">
+            {/* <div className="flex items-start gap-4">
               <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
                 <Phone className="h-6 w-6 text-accent" />
               </div>
               <div>
                 <h3 className="text-xl font-semibold mb-2">Teléfono</h3>
-                <a href="tel:+541170019828" className="text-neutral-300">+54 11 7001-9828</a>
+                <a href="tel:+541170019828" className="text-neutral-300">
+                  +54 11 7001-9828
+                </a>
               </div>
-            </div>
+            </div> */}
 
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -49,30 +63,47 @@ export function Contact() {
               </div>
               <div>
                 <h3 className="text-xl font-semibold mb-2">Email</h3>
-                <a href="mailto:m.f.logistica16@gmail.com" target="_blank" className="text-neutral-300">m.f.logistica16@gmail.com</a>
+                <a
+                  href="mailto:m.f.logistica16@gmail.com"
+                  className="text-neutral-300"
+                >
+                  m.f.logistica16@gmail.com
+                </a>
               </div>
             </div>
-            
           </div>
 
+          {/* CTA */}
           <div className="bg-neutral-800 rounded-2xl p-8 md:p-12">
-            <h3 className="text-3xl font-bold mb-4">Empezá a trabajar con nosotros</h3>
+            <h3 className="text-3xl font-bold mb-4">
+              Empezá a trabajar con nosotros
+            </h3>
             <p className="text-neutral-300 mb-8 text-pretty leading-relaxed">
               Productos de calidad, trato directo, entregas puntuales y los mejores precios mayoristas del mercado.
             </p>
+
             <Button
               size="lg"
-              onClick={handleWhatsApp}
+              onClick={handleMail}
               className="w-full bg-accent text-accent-foreground hover:bg-accent/90 text-lg py-6 cursor-pointer"
             >
-              <MessageCircle className="mr-2 h-5 w-5" />
-              Contactar por WhatsApp
+              <Mail className="mr-2 h-5 w-5" />
+              Enviar Email
             </Button>
           </div>
         </div>
 
         <div className="mt-16 pt-12 border-t border-neutral-700 text-center">
-          <p className="text-neutral-400">© 2026 MF Logística · Desarrollado por <a href="https://allworks.com.ar" target="_blank" className="hover:underline">All Works Pages</a>.</p>
+          <p className="text-neutral-400">
+            © 2026 MF Logística · Desarrollado por{" "}
+            <a
+              href="https://allworks.com.ar"
+              target="_blank"
+              className="hover:underline"
+            >
+              All Works Pages
+            </a>
+          </p>
         </div>
       </div>
     </section>

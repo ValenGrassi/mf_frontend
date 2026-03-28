@@ -95,11 +95,12 @@ export function Navbar() {
               </div>
             </div>
 
-            <div className="flex justify-center items-center gap-4"><Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90">
+            <div className="flex justify-center items-center gap-4">
+              {/* <Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90">
               <a href="https://wa.me/5491123456789" target="_blank" rel="noopener noreferrer">
                 Contacto
               </a>
-            </Button>
+            </Button> */}
 
             <Link
               href="/#como-pedir"
@@ -154,11 +155,11 @@ export function Navbar() {
                 </div>
               </div>
 
-              <Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90 w-full">
+              {/* <Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90 w-full">
                 <a href="https://wa.me/5491123456789" target="_blank" rel="noopener noreferrer">
                   Contacto
                 </a>
-              </Button>
+              </Button> */}
             </div>
           </div>
         )}
