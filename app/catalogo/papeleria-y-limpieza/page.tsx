@@ -30,102 +30,102 @@ export default function ComidaChinaPage() {
   const products3 = [
     {
       category: "Bandeja de Sushi Grande",
-      image: "../bandeja-grande.webp",
+      image: "/bandeja-grande.webp",
       subtitle: `Bandex "Media Costilla" x 200u con tapa`
     },
     {
       category: "Bandeja de Sushi Chica",
-      image: "../bandeja-chica.jpg",
+      image: "/bandeja-chica.jpg",
       subtitle: "Bandex 153 x 200u con tapa"
     },
     {
       category: "Bandeja PP 143 Bisagra",
-      image: "../bandeja-bisagra.jpg",
+      image: "/bandeja-bisagra.jpg",
       subtitle: "Bandex Apto Microondas x 200u con tapa"
     },
     {
       category: "Bandeja Pet 102",
-      image: "../bandeja-pet-2.jpg",
+      image: "/bandeja-pet-2.jpg",
       subtitle:"Cotnyl x 1200u con tapa"
     },
     {
       category:"Ensaladera Cuadrada",
-      image:"../ensaladera.jpg",
+      image:"/ensaladera.jpg",
       subtitle:"Bandex x 150u con tapa"
     },
     {
       category:"Plato Térmico",
-      image:"../plato.jpg",
+      image:"/plato.jpg",
       subtitle:"Isopor x 147u con tapa marmita"
     },
     {
       category:"Pote Salcero 55cc",
-      image:"../pote.jpg",
+      image:"/pote.jpg",
       subtitle:"x 1300u con tapa"
     },
     {
       category: "Rollo Térmico Comandera",
-      image: "../rollo.jpg",
+      image: "/rollo.jpg",
       subtitle:"(80x30) x 10u"
     },
     {
       category:"Rollo Térmico PedidosYa",
-      image:"../rollo-pedidos.jpg",
+      image:"/rollo-pedidos.jpg",
       subtitle:"(57x20) x 10u"
     },
     {
       category:"Mangas Descartables",
-      image:"../mangas.jpg",
+      image:"/mangas.jpg",
       subtitle:"(Repostería Nº5) x 10u"
     },
     {
       category:"Bolsas Kraft FM8",
-      image:"../bolsas-kraft.jpg",
+      image:"/bolsas-kraft.jpg",
       subtitle:`Papel Madera (27x35x16) x 100u`
     },
     {
       category:"Bolsas de Arranque",
-      image:"../arranque.jpg",
+      image:"/arranque.jpg",
       subtitle:"(20x30) x 750gr"
     },
     {
       category: "Bolsas Grandes",
-      image: "../bolsas-grandes.jpg",
+      image: "/bolsas-grandes.jpg",
       subtitle:"Camiseta Cristal (32x45) x 100u"
     },
     {
       category:"Bolsas Chicas",
-      image:"../bolsas-chicas.jpg",
+      image:"/bolsas-chicas.jpg",
       subtitle:"Camiseta Cristal (22x35) x 100u"
     },
     {
       category:"Pro-Film",
-      image:"../film.jpg",
+      image:"/film.jpg",
       subtitle:"x 600mts"
     },
     {
       category: "Folex Láminas / Separadores",
-      image: "../laminas.jpg",
+      image: "/laminas.jpg",
       subtitle:"(20x25) x KG"
     },
     {
       category:"Aluminio Rollo 40cm",
-      image:"../aluminio.jpg",
+      image:"/aluminio.jpg",
       subtitle:"x KG"
     },
     {
       category:"Bobina de Limpieza ECO",
-      image:"../bobina.jpg",
+      image:"/bobina.jpg",
       subtitle:"Doble Hoja x 2u"
     },
     {
       category: "Guantes de Nitrilo",
-      image: "../guantes.jpg",
+      image: "/guantes.jpg",
       subtitle:`Talle "M" Negros x 100u`
     },
     {
       category:"Cinta Scotch Transparente",
-      image:"../cinta.jpg",
+      image:"/cinta.jpg",
       subtitle:"(25mm x 45mts) x Unidad"
     }
   ]
@@ -133,32 +133,32 @@ export default function ComidaChinaPage() {
   const products4 = [
     {
       category: "Lavandina",
-      image: "../lavandina.jpg",
+      image: "/lavandina.jpg",
       subtitle: "x 10lts"
     },
     {
       category: "Alcohol Etílico 96%",
-      image: "../alcohol.jpg",
+      image: "/alcohol.jpg",
       subtitle: "x 5lts"
     },
     {
       category: "Bolsas de Residuo",
-      image: "../bolsas-residuo.jpg",
+      image: "/bolsas-residuo.jpg",
       subtitle: "(90x110) Negras x 50u"
     },
     {
       category: "Desodorante de Piso",
-      image: "../desodorante.jpg",
+      image: "/desodorante.jpg",
       subtitle:"x 10lts"
     },
     {
       category:"Detergente",
-      image:"../detergente.jpg",
+      image:"/detergente.jpg",
       subtitle:"x 10lts"
     },
     {
       category:"Desengrasante",
-      image:"../desengrasante.jpg",
+      image:"/desengrasante.jpg",
       subtitle:"x 10lts"
     },
   ]

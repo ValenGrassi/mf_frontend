@@ -29,37 +29,37 @@ export default function CocinaCoreanaPage() {
   const products = [
     {
       category: "Salmón Entero Fresco",
-      image: "../salmon.jpeg",
+      image: "/salmon.jpeg",
       subtitle: "Premium Salar x KG"
     },
     {
       category: "Salmón de Penca",
-      image: "../salmon-en-penca.jpeg",
+      image: "/salmon-en-penca.jpeg",
       subtitle: "x KG"
     },
     {
       category: "Salmón Ahumado Feteado",
-      image: "../salmon-ahumado.jpeg",
+      image: "/salmon-ahumado.jpeg",
       subtitle: "En Penca x KG"
     },
     {
       category: "Cola de Langostino Mix en Plancha o IQF",
-      image: "../langostino-plancha.jpg",
+      image: "/langostino-plancha.jpg",
       subtitle:"x KG"
     },
     {
       category:"Cola de Langostino N1 y N2 en cajitas",
-      image:"../cola-caja.jpg",
+      image:"/cola-caja.jpg",
       subtitle:"x KG"
     },
     {
       category:"Langostinos Pelados IQF",
-      image:"../langostinos-pelados.jpg",
+      image:"/langostinos-pelados.jpg",
       subtitle:"x KG"
     },
     {
       category:"Mejillón Pelado Chileno IQF",
-      image:"../mejillon.jpg",
+      image:"/mejillon.jpg",
       subtitle:"x KG"
     }
   ]
@@ -67,57 +67,57 @@ export default function CocinaCoreanaPage() {
   const products2 = [
     {
       category: "Kanikama Largo",
-      image: "../kanikama.jpg",
+      image: "/kanikama.jpg",
       subtitle: "Santa Elena x 600gr"
     },
     {
       category: "Pulpo Español",
-      image: "../pulpo-español.jpeg",
+      image: "/pulpo-espanol.jpg",
       subtitle: "(Peso 1 a 2 KG) x KG"
     },
     {
       category: "Atún Rojo en Cubos",
-      image: "../atun-cubos.jpeg",
+      image: "/atun-cubos.jpeg",
       subtitle: "(Trozos de 500 GR) x KG"
     },
     {
       category: "Filet de Lenguado",
-      image: "../filet-de-lenguado.jpeg",
+      image: "/filet-de-lenguado.jpeg",
       subtitle:"Congelado x KG"
     },
     {
       category:"Tubo de Calamar",
-      image:"../tubo-de-calamar.jpeg",
+      image:"/tubo-de-calamar.jpeg",
       subtitle:"Tiernizado x KG"
     },
     {
       category:"Caviar Rojo",
-      image:"../caviar-rojo.jpg",
+      image:"/caviar-rojo.jpg",
       subtitle:"Boken (Huevas) x 320 GR"
     },
     {
       category:"Caviar Negro",
-      image:"../caviar-negro.jpg",
+      image:"/caviar-negro.jpg",
       subtitle:"Boken (Huevas) x 320 GR"
     },
     {
       category: "Empanaditas Chinas Harumakis",
-      image: "../empanaditas.jpg",
+      image: "/empanaditas.jpg",
       subtitle:"De Carne o Verdura x 50u"
     },
     {
       category:"Dumplings",
-      image:"../dumplings.jpg",
+      image:"/dumplings.jpg",
       subtitle:"De cerdo y Choclo x 24u"
     },
     {
       category:"Pechuga/Suprema de polo",
-      image:"../pechuga.jpg",
+      image:"/pechuga.jpg",
       subtitle:"Deshuesada y Sin Piel (Presentación x 15 KG)"
     },
     {
       category:"Tequeños de Queso",
-      image:"../tequeños.jpg",
+      image:"/tequenos.jpg",
       subtitle:`"El Tovareño" x 12u`
     }
   ]

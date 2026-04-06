@@ -140,7 +140,7 @@ export function CatalogPreview() {
           ))}
         </div>
 
-        {/* CTA final */}
+        {/* CTA final
         <div className="text-center rounded-2xl pt-12">
           <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
             ¿Necesitás más información?
@@ -152,7 +152,7 @@ export function CatalogPreview() {
             <MessageCircle className="mr-2 h-5 w-5" />
             Solicitar Listado
           </Button>
-        </div>
+        </div> */}
       </div>
     </section>
   )

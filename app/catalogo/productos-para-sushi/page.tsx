@@ -30,132 +30,132 @@ export default function CocinaTailandesaPage() {
   const products = [
     {
       category: "Arroz Fortuna 00000",
-      image: "../arroz-fortuna.jpg",
+      image: "/arroz-fortuna.jpg",
       subtitle: `Premium Para Sushi x 30 KG "Fumeiga"`
     },
     {
       category: "Arroz Largo Fino",
-      image: "../arroz-largo.jpg",
+      image: "/arroz-largo.jpg",
       subtitle: "Para Wok x 30 KG"
     },
     {
       category: `Algas Nori "Yaki"`,
-      image: "../algas-yaki.jpg",
+      image: "/algas-yaki.jpg",
       subtitle: "Paquete Blanco x 100 Láminas"
     },
     {
       category: `Algas Nori "Yamagataya"`,
-      image: "../algas-2.jpg",
+      image: "/algas-2.jpg",
       subtitle:"Paquete Rojo x 100 Láminas"
     },
     {
       category:"Blister de Soja",
-      image:"../blister.jpg",
+      image:"/blister.jpg",
       subtitle:`"Fumeiga" x 180u`
     },
     {
       category:"Salsa de Soja",
-      image:"../salsa.jpg",
+      image:"/salsa.jpg",
       subtitle:`"Fumeiga" Tapa Roja x 5lts`
     },
     {
       category:"Salsa de Soja Sachet",
-      image:"../sachet.jpg",
+      image:"/sachet.jpg",
       subtitle:`"Fumeiga" x 10g x Caja de 5 KG`
     },
     {
       category: "Salsa Agridulce",
-      image: "../agridulce.jpg",
+      image: "/agridulce.jpg",
       subtitle:`"Fumeiga" x 2lts`
     },
     {
       category:"Salsa de Ostras",
-      image:"../ostras.png",
+      image:"/ostras.png",
       subtitle:`"Haday" x 2.27 KG`
     },
     {
       category:"Fideos de Arroz Fino",
-      image:"../fideos.jpg",
+      image:"/fideos.jpg",
       subtitle:"X 400gr"
     },
     {
       category:"Palitos Chinos con Funda",
-      image:"../palillos.jpg",
+      image:"/palillos.jpg",
       subtitle:`Largos 23cm x 100u`
     },
     {
       category: "Esterillas Gruesas",
-      image: "../esterillas.webp",
+      image: "/esterillas.webp",
       subtitle: `(27x27) x 1u`
     },
     {
       category: "Siracha",
-      image: "../siracha.png",
+      image: "/siracha.png",
       subtitle: `"Toung Ot" x 793gr`
     },
     {
       category: `Mirim Shi Quian`,
-      image: "../mirim.jpg",
+      image: "/mirim.jpg",
       subtitle: "x 500ml"
     },
     {
       category: `Aceite de Sésamo`,
-      image: "../aceite-sesamo.jpg",
+      image: "/aceite-sesamo.jpg",
       subtitle:`"Ann" x 1lt`
     },
     {
       category:"Sésamo Negro",
-      image:"../sesamo-negro.jpg",
+      image:"/sesamo-negro.jpg",
       subtitle:`x KG India`
     },
     {
       category:"Sésamo Blanco",
-      image:"../sesamo-blanco.jpg",
+      image:"/sesamo-blanco.jpg",
       subtitle:`x KG India`
     },
     {
       category:"Sésamo Integral",
-      image:"../sesamo-integral.jpg",
+      image:"/sesamo-integral.jpg",
       subtitle:`x KG India`
     },
     {
       category: "Jengibre en Hojas",
-      image: "../jengibre-natural.jpg",
+      image: "/jengibre-natural.jpg",
       subtitle:`Gari Natural x 1 KG`
     },
     {
       category:"Jengibre en Hojas",
-      image:"../jengibre-rosado.jpg",
+      image:"/jengibre-rosado.jpg",
       subtitle:`Gari Rosado x 1 KG`
     },
     {
       category:"Panko Japanese",
-      image:"../panko-blanco.jpg",
+      image:"/panko-blanco.jpg",
       subtitle:"Style Blanco x 1 KG"
     },
     {
       category:"Panko Japanese",
-      image:"../panko-naranja.jpg",
+      image:"/panko-naranja.jpg",
       subtitle:`Style Naranja x 1 KG`
     },
     {
       category: "Wasabi Powder",
-      image: "../wasabi.jpg",
+      image: "/wasabi.jpg",
       subtitle:`x 1 KG`
     },
     {
       category:"Ajinomoto",
-      image:"../ajinomoto.jpg",
+      image:"/ajinomoto.jpg",
       subtitle:`x 1 KG`
     },
     {
       category:"Hondashi",
-      image:"../hondashi.jpg",
+      image:"/hondashi.jpg",
       subtitle:"x 500gr"
     },
     {
       category:"Togarashi Shichimi",
-      image:"../shichimi.jpg",
+      image:"/shichimi.jpg",
       subtitle:`x 300gr`
     }
   ]
