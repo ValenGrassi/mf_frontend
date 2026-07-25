@@ -9,6 +9,7 @@ import { FeaturedProducts } from "@/components/featured-products"
 import { OrderProcess } from "@/components/order-process"
 import { Suppliers } from "@/components/suppliers"
 import { Clients } from "@/components/clients"
+import { FloatingWhatsapp } from "@/components/floating-whatsapp"
 
 export const metadata: Metadata = {
   title: "MF Logística - Distribución Mayorista para Restaurantes Orientales | CABA y AMBA",
@@ -49,6 +50,7 @@ export default function Page() {
         <Clients/>
         <Suppliers/>
       </main>
+      {/* <FloatingWhatsapp /> */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

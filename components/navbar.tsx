@@ -61,10 +61,12 @@ export function Navbar() {
               onMouseEnter={() => setCatalogDropdownOpen(true)}
               onMouseLeave={() => setCatalogDropdownOpen(false)}
             >
-              <button
-                onClick={() => setCatalogDropdownOpen(!catalogDropdownOpen)}
+              {/* Cambiado de button a Link */}
+              <Link
+                href="/catalogo"
+                onClick={() => setCatalogDropdownOpen(false)}
                 className={`flex items-center gap-1 text-base font-medium transition-colors hover:text-accent cursor-pointer ${
-                  pathname.startsWith("/catalogo") ? "text-accent" : "text-foreground/80"
+                  pathname === "/catalogo" ? "text-accent" : "text-foreground/80"
                 }`}
               >
                 Catálogo
@@ -73,7 +75,7 @@ export function Navbar() {
                     catalogDropdownOpen ? "rotate-180" : ""
                   }`}
                 />
-              </button>
+              </Link>
 
               {/* Dropdown con animación */}
               <div
@@ -87,6 +89,7 @@ export function Navbar() {
                   <Link
                     key={section.href}
                     href={section.href}
+                    onClick={() => setCatalogDropdownOpen(false)}
                     className="block px-4 py-3 text-sm font-medium text-foreground/80 hover:bg-muted hover:text-accent transition-colors"
                   >
                     {section.name}
@@ -95,19 +98,19 @@ export function Navbar() {
               </div>
             </div>
 
-            <div className="flex justify-center items-center gap-4">
-              <Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90">
-              <a href="#footer" rel="noopener noreferrer">
+            <div className="flex justify-center items-center gap-4"><Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90">
+            <a href="https://wa.me/5491172667077?text=Hola!%20Vengo%20de%20la%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n.%20Gracias!" target="_blank" rel="noopener noreferrer">
                 Contacto
               </a>
             </Button>
 
-            <Link
-              href="/#como-pedir"
-              className={`text-base font-bold transition-colors hover:text-accent text-foreground/80`}
-            >
-              Hacer pedido
-            </Link></div>
+              <Link
+                href="/#como-pedir"
+                className={`text-base font-bold transition-colors hover:text-accent text-foreground/80`}
+              >
+                Hacer pedido
+              </Link>
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
@@ -140,7 +143,14 @@ export function Navbar() {
               </Link>
 
               <div className="flex flex-col gap-2">
-                <span className="text-base font-medium text-foreground/80">Catálogo</span>
+                {/* Cambiado de span a Link en la versión móvil */}
+                <Link 
+                  href="/catalogo"
+                  className="text-base font-medium text-foreground/80 hover:text-accent transition-colors"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Catálogo
+                </Link>
                 <div className="pl-4 flex flex-col gap-2">
                   {catalogSections.map((section) => (
                     <Link
@@ -156,7 +166,7 @@ export function Navbar() {
               </div>
 
               <Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90 w-full">
-                <a href="#footer" rel="noopener noreferrer">
+              <a href="https://wa.me/5491172667077?text=Hola!%20Vengo%20de%20la%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n.%20Gracias!" target="_blank" rel="noopener noreferrer">
                   Contacto
                 </a>
               </Button>

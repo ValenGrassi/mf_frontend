@@ -48,7 +48,7 @@ export function CatalogSection({ title, description, products }: CatalogSectionP
   }, [selectedIndex, handleNext, handlePrev])
 
   return (
-    <section className="py-20 bg-background" id={title}>
+    <section className="my-10 py-10 bg-background border-b" id={title}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header Original */}
         <div className="text-center mb-16">

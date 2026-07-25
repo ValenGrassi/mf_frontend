@@ -7,9 +7,9 @@ export function OrderProcess() {
     {
       number: "01",
       title: "Solicite el listado",
-      description: "Pida el catálogo actualizado vía WhatsApp para ver stock y precios.",
+      description: "Haga click y pida el catálogo actualizado vía WhatsApp para ver stock y precios.",
       icon: FileText,
-      link:"https://wa.me/541170019828",
+      link:"https://wa.me/5491172667077?text=Hola!%20Vengo%20de%20la%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20recibir%20el%20cat%C3%A1logo%20de%20productos.%20Gracias!",
     },
     {
       number: "02",

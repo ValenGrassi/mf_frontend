@@ -1,35 +1,266 @@
 import { Navbar } from "@/components/navbar"
 import { CatalogSection } from "@/components/catalog-section"
 import type { Metadata } from "next"
-import { MasInfo } from "@/components/mas-info"
-import { ChevronLeft, ChevronRight } from "lucide-react"
-import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
+import { ChevronLeft, ChevronRight } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Almacén - Insumos Premium para Restaurantes de Sushi | MF Logística",
+  title: "Catálogo | MF Logística",
   description:
-    "Distribuimos productos de almacén para tu restaurante de sushi en Buenos Aires. Calidad garantizada y precios mayoristas.",
+    "Distribuimos arroz, algas, soja, palillos y todos los ingredientes para tu restaurante de sushi en Buenos Aires. Especias aromáticas y productos frescos.",
   keywords: [
-    "almacen",
-    "papeleria",
-    "verduleria",
-    "limpieza",
-    "sushi",
-    "almacen para sushi",
-    "mayorista sushi Buenos Aires",
+    "catalogo",
     "productos para sushi",
-    "verduras para sushi",
+    "soja",
+    "salsa de soja",
+    "algas",
+    "palitos chinos",
+    "sesamo",
+    "jengibre",
   ],
   openGraph: {
-    title: "Catálogo Almacén - MF Logística",
-    description: "Insumos premium para restaurantes de sushi en Buenos Aires",
+    title: "Catálogo de Productos para Sushi - MF Logística",
+    description: "Ingredientes frescos y aromáticos para restaurantes de sushi en Buenos Aires",
     type: "website",
   },
 }
 
-export default function SushiJaponesPage() {
+export default function CocinaTailandesaPage() {
+  const pescaderia = [
+    {
+      category: "Salmón Entero Fresco",
+      image: "/salmon.jpeg",
+      subtitle: "Premium Salar x KG"
+    },
+    {
+      category: "Salmón de Penca",
+      image: "/salmon-en-penca.jpeg",
+      subtitle: "x KG"
+    },
+    {
+      category: "Salmón Ahumado Feteado",
+      image: "/salmon-ahumado.jpeg",
+      subtitle: "En Penca x KG"
+    },
+    {
+      category: "Cola de Langostino Mix en Plancha o IQF",
+      image: "/langostino-plancha.jpg",
+      subtitle:"x KG"
+    },
+    {
+      category:"Cola de Langostino N1 y N2 en cajitas",
+      image:"/cola-caja.jpg",
+      subtitle:"x KG"
+    },
+    {
+      category:"Langostinos Pelados IQF",
+      image:"/langostinos-pelados.jpg",
+      subtitle:"x KG"
+    },
+    {
+      category:"Langostinos Pelados Desvenados",
+      image:"/langostinopelado.jpeg",
+      subtitle:"x KG"
+    },
+    {
+      category:"Mejillón Pelado Chileno IQF",
+      image:"/mejillon.jpg",
+      subtitle:"x KG"
+    }
+  ]
+
+  const frescos = [
+    {
+      category: "Kanikama Largo",
+      image: "/kanikama.jpg",
+      subtitle: "Santa Elena x 600gr"
+    },
+    {
+      category: "Pulpo Español",
+      image: "/pulpo-espanol.jpg",
+      subtitle: "(Peso 1 a 2 KG) x KG"
+    },
+    {
+      category: "Atún Rojo en Cubos",
+      image: "/atun-cubos.jpeg",
+      subtitle: "(Trozos de 500 GR) x KG"
+    },
+    {
+      category: "Filet de Lenguado",
+      image: "/filet-de-lenguado.jpeg",
+      subtitle:"Congelado x KG"
+    },
+    {
+      category:"Tubo de Calamar",
+      image:"/tubo-de-calamar.jpeg",
+      subtitle:"Tiernizado x KG"
+    },
+    {
+      category:"Caviar Rojo",
+      image:"/caviar-rojo.jpg",
+      subtitle:"Boken (Huevas) x 320 GR"
+    },
+    {
+      category:"Caviar Negro",
+      image:"/caviar-negro.jpg",
+      subtitle:"Boken (Huevas) x 320 GR"
+    },
+    {
+      category: "Empanaditas Chinas Harumakis",
+      image: "/empanaditas.jpg",
+      subtitle:"De Carne o Verdura x 50u"
+    },
+    {
+      category:"Dumplings",
+      image:"/dumplings.jpg",
+      subtitle:"De cerdo y Choclo x 24u"
+    },
+    {
+      category:"Pechuga/Suprema de polo",
+      image:"/pechuga.jpg",
+      subtitle:"Deshuesada y Sin Piel (Presentación x 15 KG)"
+    },
+    {
+      category:"Tequeños de Queso",
+      image:"/tequenos.jpg",
+      subtitle:`"El Tovareño" x 12u`
+    }
+    
+  ]
   const products = [
+    {
+      category: "Arroz Fortuna 00000",
+      image: "/arroz-fortuna.jpg",
+      subtitle: `Premium Para Sushi x 30 KG "Fumeiga"`
+    },
+    {
+      category: "Arroz Largo Fino",
+      image: "/arroz-largo.jpg",
+      subtitle: "Para Wok x 30 KG"
+    },
+    {
+      category: `Algas Nori "Yaki"`,
+      image: "/algas-yaki.jpg",
+      subtitle: "Paquete Blanco x 100 Láminas"
+    },
+    {
+      category: `Algas Nori "Yamagataya"`,
+      image: "/algas-2.jpg",
+      subtitle:"Paquete Rojo x 100 Láminas"
+    },
+    {
+      category:"Blister de Soja",
+      image:"/blister.jpg",
+      subtitle:`"Fumeiga" x 180u`
+    },
+    {
+      category:"Salsa de Soja",
+      image:"/salsa.jpg",
+      subtitle:`"Fumeiga" Tapa Roja x 5lts`
+    },
+    {
+      category:"Salsa de Soja Sachet",
+      image:"/sachet.jpg",
+      subtitle:`"Fumeiga" x 10g x Caja de 5 KG`
+    },
+    {
+      category: "Salsa Agridulce",
+      image: "/agridulce.jpg",
+      subtitle:`"Fumeiga" x 2lts`
+    },
+    {
+      category:"Salsa de Ostras",
+      image:"/ostras.png",
+      subtitle:`"Haday" x 2.27 KG`
+    },
+    {
+      category:"Fideos de Arroz Fino",
+      image:"/fideos.jpg",
+      subtitle:"X 400gr"
+    },
+    {
+      category:"Palitos Chinos con Funda",
+      image:"/palillos.jpg",
+      subtitle:`Largos 23cm x 100u`
+    },
+    {
+      category: "Esterillas Gruesas",
+      image: "/esterillas.webp",
+      subtitle: `(27x27) x 1u`
+    },
+    {
+      category: "Siracha",
+      image: "/siracha.png",
+      subtitle: `"Toung Ot" x 793gr`
+    },
+    {
+      category: `Mirim Shi Quian`,
+      image: "/mirim.jpg",
+      subtitle: "x 500ml"
+    },
+    {
+      category: `Aceite de Sésamo`,
+      image: "/aceite-sesamo.jpg",
+      subtitle:`"Ann" x 1lt`
+    },
+    {
+      category:"Sésamo Negro",
+      image:"/sesamo-negro.jpg",
+      subtitle:`x KG India`
+    },
+    {
+      category:"Sésamo Blanco",
+      image:"/sesamo-blanco.jpg",
+      subtitle:`x KG India`
+    },
+    {
+      category:"Sésamo Integral",
+      image:"/sesamo-integral.jpg",
+      subtitle:`x KG India`
+    },
+    {
+      category: "Jengibre en Hojas",
+      image: "/jengibre-natural.jpg",
+      subtitle:`Gari Natural x 1 KG`
+    },
+    {
+      category:"Jengibre en Hojas",
+      image:"/jengibre-rosado.jpg",
+      subtitle:`Gari Rosado x 1 KG`
+    },
+    {
+      category:"Panko Japanese",
+      image:"/panko-blanco.jpg",
+      subtitle:"Style Blanco x 1 KG"
+    },
+    {
+      category:"Panko Japanese",
+      image:"/panko-naranja.jpg",
+      subtitle:`Style Naranja x 1 KG`
+    },
+    {
+      category: "Wasabi Powder",
+      image: "/wasabi.jpg",
+      subtitle:`x 1 KG`
+    },
+    {
+      category:"Ajinomoto",
+      image:"/ajinomoto.jpg",
+      subtitle:`x 1 KG`
+    },
+    {
+      category:"Hondashi",
+      image:"/hondashi.jpg",
+      subtitle:"x 500gr"
+    },
+    {
+      category:"Togarashi Shichimi",
+      image:"/shichimi.jpg",
+      subtitle:`x 300gr`
+    }
+  ]
+  const almacen = [
     {
       category: "Queso Finlandia Sachet",
       image: "/finlandia.jpg",
@@ -112,7 +343,7 @@ export default function SushiJaponesPage() {
     }
   ]
 
-  const products2 = [
+  const verduleria = [
     {
       category: "Palta Hass",
       image: "/palta.jpg",
@@ -356,49 +587,51 @@ export default function SushiJaponesPage() {
   ]
   
 
+
   return (
     <>
       <Navbar />
       <main className="min-h-screen pt-20">
+      <CatalogSection
+          title="Pescadería"
+          description="Pescados seleccionados para uso gastronómico profesional. Cortes frescos y congelados ideales para sushi, con calidad constante y abastecimiento mayorista.
+          "
+          products={pescaderia}
+        />
+        <CatalogSection
+          title="Frescos y Congelados"
+          description="Productos refrigerados y congelados pensados para la dinámica diaria de tu cocina. Conservación óptima, rendimiento y disponibilidad asegurada.
+          "
+          products={frescos}
+        />
+        <CatalogSection
+          title="Productos para Sushi"
+          description=" Insumos importados premium para sushi en presentaciones mayoristas. Calidad uniforme y abastecimiento constante para una producción sin interrupciones.  
+          "
+          products={products}
+        />
         <CatalogSection
           title="Almacén"
           description="Insumos mayoristas para cocina profesional. Presentaciones de alto rendimiento pensadas para optimizar costos y stock."
-          products={products}
+          products={almacen}
         />
         <CatalogSection
           title="Verdulería"
           description="Vegetales frescos seleccionados para gastronomía. Calidad, rotación y abastecimiento continuo para tu producción diaria.
           "
-          products={products2}
+          products={verduleria}
         />
-        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center pb-20"> 
-        {/* Botón Frescos y Congelados - Estilo Principal Sobrio */}
-        <Button 
-          size="lg" 
-          asChild 
-          className="group relative h-auto px-10 py-5 bg-accent text-white text-base font-medium rounded-lg shadow-sm transition-all duration-500 ease-in-out hover:bg-accent hover:opacity-90 hover:shadow-lg hover:-translate-y-0.5"
-        >
-          <Link href="../papeleria-y-limpieza" className="flex items-center gap-3">
-            <ChevronLeft
-              className="h-4 w-4 transition-transform duration-300 ease-out group-hover:translate-x-1.5" 
-            />
-            <span className="tracking-tight">Ir a papelería y limpieza</span>
-          </Link>
-        </Button>
-        {/* Botón Productos para Sushi - Estilo Secundario Sobrio */}
-        <Button 
-          size="lg" 
-          asChild 
-          className="group relative h-auto px-10 py-5 bg-white text-slate-900 border border-slate-200 text-base font-medium rounded-lg shadow-sm transition-all duration-500 ease-in-out hover:border-slate-400 hover:bg-slate-20 hover:shadow-lg hover:-translate-y-0.5"
-        >
-          <Link href="../pescaderia" className="flex items-center gap-3">
-            <span className="tracking-tight">Ir a pescadería</span>
-            <ChevronRight
-              className="h-4 w-4 transition-transform duration-300 ease-out group-hover:translate-x-1.5" 
-            />
-          </Link>
-        </Button>
-      </div>
+        <CatalogSection
+          title="Papelería"
+          description="Descartables y packaging para delivery y salón. Soluciones prácticas y resistentes para el servicio gastronómico.
+          "
+          products={products3}
+        />
+        <CatalogSection
+          title="Limpieza"
+          description="Productos de higiene y sanitización para uso profesional. Rendimiento, seguridad y formatos mayoristas para tu operación diaria."
+          products={products4}
+        />
       </main>
     </>
   )

@@ -5,13 +5,17 @@ import { MessageCircle, MapPin, Phone, Mail, Clock } from "lucide-react"
 
 export function Contact() {
 
+  const handleWhatsApp = () => {
+    window.open("https://wa.me/5491172667077?text=Hola!%20Vengo%20de%20la%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n.%20Gracias!", "_blank")
+  }
+
   const handleMail = () => {
     const subject = encodeURIComponent("Consulta desde la web")
     const body = encodeURIComponent(
       "Hola! Quisiera recibir información sobre sus servicios.\n\nNombre:\nEmpresa:\nTeléfono:"
     )
 
-    window.location.href = `mailto:m.f.logistica16@gmail.com?subject=${subject}&body=${body}`
+    window.location.href = `mailto:ventas@mflogistica.com.ar?subject=${subject}&body=${body}`
   }
 
   return (
@@ -45,17 +49,17 @@ export function Contact() {
               </div>
             </div>
 
-            {/* <div className="flex items-start gap-4">
+            <div className="flex items-start gap-4">
               <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
                 <Phone className="h-6 w-6 text-accent" />
               </div>
               <div>
                 <h3 className="text-xl font-semibold mb-2">Teléfono</h3>
-                <a href="tel:+541170019828" className="text-neutral-300">
-                  +54 11 7001-9828
+                <a href="tel:+541172667077" className="text-neutral-300">
+                  +54 11 7266-7077
                 </a>
               </div>
-            </div> */}
+            </div>
 
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -64,10 +68,10 @@ export function Contact() {
               <div>
                 <h3 className="text-xl font-semibold mb-2">Email</h3>
                 <a
-                  href="mailto:m.f.logistica16@gmail.com"
+                  href="mailto:ventas@mflogistica.com.ar"
                   className="text-neutral-300"
                 >
-                  m.f.logistica16@gmail.com
+                  ventas@mflogistica.com.ar
                 </a>
               </div>
             </div>
@@ -84,8 +88,16 @@ export function Contact() {
 
             <Button
               size="lg"
+              onClick={handleWhatsApp}
+              className="w-full bg-green-700 text-accent-foreground hover:bg-green-700/90 text-lg py-6 cursor-pointer"
+            >
+              <MessageCircle className="mr-2 h-5 w-5" />
+              Contactar por WhatsApp
+            </Button>
+            <Button
+              size="lg"
               onClick={handleMail}
-              className="w-full bg-accent text-accent-foreground hover:bg-accent/90 text-lg py-6 cursor-pointer"
+              className="w-full bg-accent text-accent-foreground hover:bg-accent/90 text-lg py-6 cursor-pointer mt-4"
             >
               <Mail className="mr-2 h-5 w-5" />
               Enviar Email

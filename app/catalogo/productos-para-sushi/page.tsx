@@ -177,7 +177,7 @@ export default function CocinaTailandesaPage() {
           asChild 
           className="group relative h-auto px-10 py-5 bg-accent text-white text-base font-medium rounded-lg shadow-sm transition-all duration-500 ease-in-out hover:bg-accent hover:opacity-90 hover:shadow-lg hover:-translate-y-0.5"
         >
-          <Link href="./pescaderia" className="flex items-center gap-3">
+          <Link href="../pescaderia" className="flex items-center gap-3">
             <ChevronLeft
               className="h-4 w-4 transition-transform duration-300 ease-out group-hover:translate-x-1.5" 
             />
@@ -190,7 +190,7 @@ export default function CocinaTailandesaPage() {
           asChild 
           className="group relative h-auto px-10 py-5 bg-white text-slate-900 border border-slate-200 text-base font-medium rounded-lg shadow-sm transition-all duration-500 ease-in-out hover:border-slate-400 hover:bg-slate-20 hover:shadow-lg hover:-translate-y-0.5"
         >
-          <Link href="./almacen" className="flex items-center gap-3">
+          <Link href="../almacen" className="flex items-center gap-3">
             <span className="tracking-tight">Ir a almacén</span>
             <ChevronRight
               className="h-4 w-4 transition-transform duration-300 ease-out group-hover:translate-x-1.5" 
