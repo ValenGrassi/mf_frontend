@@ -2,13 +2,18 @@
 import React, { useState, useEffect, useCallback } from "react"
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { MessageCircle, ChevronLeft, ChevronRight, X } from "lucide-react"
+import { MessageCircle, ChevronLeft, ChevronRight, X, ArrowUpRight, Store } from "lucide-react"
 import Image from "next/image"
+import { ML_STORE_URL } from "@/lib/mercado-libre-data"
 
 interface Product {
   category: string
   subtitle: string
   image: string
+  /** Indica si este producto específico está disponible en Mercado Libre */
+  mlProduct?: boolean
+  /** Opcional: si la publicación tiene una URL específica (si no existe, usa ML_STORE_URL) */
+  mlUrl?: string
 }
 
 interface CatalogSectionProps {
@@ -59,15 +64,52 @@ export function CatalogSection({ title, description, products }: CatalogSectionP
 
         {/* Catalog Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-10">
-          {products.map((product, index) => (
-            <div key={index} className="group cursor-pointer" onClick={() => setSelectedIndex(index)}>
-              <div className="relative aspect-square overflow-hidden rounded-2xl bg-muted mb-4 shadow-sm border border-border/40">
-                <Image src={product.image} fill alt={product.category} className=" transition-transform duration-700 group-hover:scale-105" />
+          {products.map((product, index) => {
+            const isOnML = Boolean(product.mlProduct)
+            const targetUrl = product.mlUrl || ML_STORE_URL
+
+            return (
+              <div key={index} className="group flex flex-col">
+                <div
+                  className="relative aspect-square overflow-hidden rounded-2xl bg-muted mb-4 shadow-sm border border-border/40 cursor-pointer"
+                  onClick={() => setSelectedIndex(index)}
+                >
+                  <Image src={product.image} fill alt={product.category} className="transition-transform duration-700 group-hover:scale-105" />
+                  {/* ML badge on image */}
+                  {isOnML && (
+                    <div className="absolute top-2.5 left-2.5">
+                      <span className="inline-flex items-center gap-1 bg-[oklch(0.78_0.15_80)] text-[oklch(0.15_0_0)] text-[9px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wide shadow-sm">
+                        <Store className="h-2.5 w-2.5" />
+                        Mercado Libre
+                      </span>
+                    </div>
+                  )}
+                </div>
+                <h3
+                  className="text-xl font-bold text-foreground group-hover:text-accent transition-colors text-center cursor-pointer"
+                  onClick={() => setSelectedIndex(index)}
+                >
+                  {product.category}
+                </h3>
+                <p className="text-sm md:text-base text-muted-foreground text-pretty leading-relaxed text-center">{product.subtitle}</p>
+                {/* ML "Ver publicación" button */}
+                {isOnML && (
+                  <div className="mt-3 flex justify-center">
+                    <a
+                      href={targetUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-[11px] font-semibold text-[oklch(0.78_0.15_80)] border border-[oklch(0.78_0.15_80)]/30 rounded-full px-3 py-1 hover:bg-[oklch(0.78_0.15_80)]/10 transition-colors"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      Ver publicación
+                      <ArrowUpRight className="h-3 w-3" />
+                    </a>
+                  </div>
+                )}
               </div>
-              <h3 className="text-xl font-bold text-foreground group-hover:text-accent transition-colors text-center">{product.category}</h3>
-              <p className="text-sm md:text-base text-muted-foreground text-pretty leading-relaxed text-center">{product.subtitle}</p>
-            </div>
-          ))}
+            )
+          })}
         </div>
 
         {/* MODAL COMPACTO AJUSTADO */}
@@ -76,12 +118,12 @@ export function CatalogSection({ title, description, products }: CatalogSectionP
             className="fixed inset-0 z-[100] flex items-center justify-center bg-black/50 backdrop-blur-sm p-6 animate-in fade-in duration-200"
             onClick={closeOverlay}
           >
-            {/* Contenedor del Modal - Más estrecho (max-w-md) */}
+            {/* Contenedor del Modal */}
             <div 
               className="relative bg-card rounded-4xl p-8 shadow-2xl max-w-md w-full flex flex-col items-center animate-in zoom-in-95 duration-300"
               onClick={(e) => e.stopPropagation()}
             >
-              {/* Botón Cerrar - Pequeño y pegado al borde del modal */}
+              {/* Botón Cerrar */}
               <button 
                 className="absolute top-2 right-2 text-foreground rounded-full p-1.5 transition-all z-120"
                 onClick={closeOverlay}
@@ -99,7 +141,7 @@ export function CatalogSection({ title, description, products }: CatalogSectionP
                   priority
                 />
 
-                {/* Flechas de Navegación pegadas a los bordes de la imagen */}
+                {/* Flechas de Navegación */}
                 <button 
                   className="absolute cursor-pointer -left-8 md:-left-20 top-1/2 -translate-y-1/2 bg-transparent hover:bg-white text-black p-1.5 rounded-full shadow-lg transition-all"
                   onClick={(e) => { e.stopPropagation(); handlePrev(); }}
@@ -115,8 +157,8 @@ export function CatalogSection({ title, description, products }: CatalogSectionP
                 </button>
               </div>
 
-              {/* Título debajo de la imagen con espaciado prolijo */}
-              <div className="pt-6 pb-2 text-center">
+              {/* Título y detalles */}
+              <div className="pt-6 pb-2 text-center w-full">
                 <h2 className="text-2xl font-bold text-foreground tracking-tight">
                   {products[selectedIndex].category}
                 </h2>
@@ -126,6 +168,29 @@ export function CatalogSection({ title, description, products }: CatalogSectionP
                     Producto {selectedIndex + 1} de {products.length}
                   </p>
                 </div>
+
+                {/* ML callout */}
+                {products[selectedIndex].mlProduct && (
+                  <div className="mt-5 rounded-xl border border-[oklch(0.78_0.15_80)]/25 bg-[oklch(0.78_0.15_80)]/5 p-4 text-left">
+                    <div className="flex items-center gap-2 mb-1.5">
+                      <Store className="h-4 w-4 text-[oklch(0.78_0.15_80)] shrink-0" />
+                      <p className="text-sm font-bold text-foreground">También disponible en Mercado Libre</p>
+                    </div>
+                    <p className="text-xs text-muted-foreground mb-3 leading-relaxed">
+                      Este producto puede adquirirse desde nuestra tienda oficial con envío a todo el país y compra protegida.
+                    </p>
+                    <a
+                      href={products[selectedIndex].mlUrl || ML_STORE_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 bg-[oklch(0.78_0.15_80)] text-[oklch(0.15_0_0)] text-xs font-bold px-4 py-2 rounded-lg hover:bg-[oklch(0.72_0.15_80)] transition-colors"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      Ver publicación
+                      <ArrowUpRight className="h-3.5 w-3.5" />
+                    </a>
+                  </div>
+                )}
               </div>
             </div>
           </div>

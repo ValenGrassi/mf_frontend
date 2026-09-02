@@ -31,7 +31,9 @@ export default function CocinaTailandesaPage() {
     {
       category: "Arroz Fortuna 00000",
       image: "/arroz-fortuna.jpg",
-      subtitle: `Premium Para Sushi x 30 KG "Fumeiga"`
+      subtitle: `Premium Para Sushi x 30 KG "Fumeiga"`,
+      mlProduct: true,
+      mlUrl: "https://www.mercadolibre.com.ar/arroz-fumeiga-para-sushi-00000-x-30-kg/up/MLAU4274421722?pdp_filters=item_id:MLA3582039670" // Link directo a esta publicación
     },
     {
       category: "Arroz Largo Fino",
@@ -41,12 +43,16 @@ export default function CocinaTailandesaPage() {
     {
       category: `Algas Nori "Yaki"`,
       image: "/algas-yaki.jpg",
-      subtitle: "Paquete Blanco x 100 Láminas"
+      subtitle: "Paquete Blanco x 100 Láminas",
+      mlProduct: true,
+      mlUrl: "https://www.mercadolibre.com.ar/alga-yaki-nori-x100-sushi/up/MLAU4195066690?pdp_filters=item_id:MLA3539229910"
     },
     {
       category: `Algas Nori "Yamagataya"`,
       image: "/algas-2.jpg",
-      subtitle:"Paquete Rojo x 100 Láminas"
+      subtitle:"Paquete Rojo x 100 Láminas",
+      mlProduct: true,
+      mlUrl: "https://www.mercadolibre.com.ar/algas-nori-sushi-yamagataya-100-laminas-tostadas-importadas/p/MLA2042336556?pdp_filters=item_id:MLA1926106973"
     },
     {
       category:"Blister de Soja",
@@ -54,14 +60,23 @@ export default function CocinaTailandesaPage() {
       subtitle:`"Fumeiga" x 180u`
     },
     {
+      category:"Salsa de Soja 45cc",
+      image:"/bitarwan.jpeg",
+      subtitle:`"Bitarwan" x 169u`,
+      mlProduct: true,
+      mlUrl: "https://www.mercadolibre.com.ar/salsa-de-soja-biterwan-caja-x-169-uni-45-cc/up/MLAU4311454283?pdp_filters=item_id:MLA3610728778"
+    },
+    {
       category:"Salsa de Soja",
       image:"/salsa.jpg",
-      subtitle:`"Fumeiga" Tapa Roja x 5lts`
+      subtitle:`"Fumeiga" Tapa Roja x 5lts`,
+      mlProduct: true,
+      mlUrl: "https://www.mercadolibre.com.ar/salsa-de-soja-fumeiga-premiun-x-5-l/up/MLAU4203623904?pdp_filters=item_id:MLA3545347846"
     },
     {
       category:"Salsa de Soja Sachet",
       image:"/sachet.jpg",
-      subtitle:`"Fumeiga" x 10g x Caja de 5 KG`
+      subtitle:`"Fumeiga" x 10g x Caja de 5 KG`,
     },
     {
       category: "Salsa Agridulce",
@@ -81,7 +96,9 @@ export default function CocinaTailandesaPage() {
     {
       category:"Palitos Chinos con Funda",
       image:"/palillos.jpg",
-      subtitle:`Largos 23cm x 100u`
+      subtitle:`Largos 23cm x 100u`,
+      mlProduct: true,
+      mlUrl: "https://www.mercadolibre.com.ar/pack-x-5-palitos-de-sushi-waribashi-bambu-500-uni/up/MLAU4333667160?pdp_filters=item_id:MLA1897268151"
     },
     {
       category: "Esterillas Gruesas",
@@ -121,7 +138,9 @@ export default function CocinaTailandesaPage() {
     {
       category: "Jengibre en Hojas",
       image: "/jengibre-natural.jpg",
-      subtitle:`Gari Natural x 1 KG`
+      subtitle:`Gari Natural x 1 KG`,
+      mlProduct: true,
+      mlUrl: "https://www.mercadolibre.com.ar/jengibre-gari-natural-para-sushi-en-laminas-x-1-kilo/up/MLAU4203517264?pdp_filters=item_id:MLA1868728907"
     },
     {
       category:"Jengibre en Hojas",
@@ -141,7 +160,9 @@ export default function CocinaTailandesaPage() {
     {
       category: "Wasabi Powder",
       image: "/wasabi.jpg",
-      subtitle:`x 1 KG`
+      subtitle:`x 1 KG`,
+      mlProduct: true,
+      mlUrl: "https://www.mercadolibre.com.ar/wasabi--en-polvo-x-1-kg/up/MLAU4203689612?pdp_filters=item_id:MLA3545196604"
     },
     {
       category:"Ajinomoto",
@@ -166,8 +187,7 @@ export default function CocinaTailandesaPage() {
       <main className="min-h-screen pt-20">
         <CatalogSection
           title="Productos para Sushi"
-          description=" Insumos importados premium para sushi en presentaciones mayoristas. Calidad uniforme y abastecimiento constante para una producción sin interrupciones.  
-          "
+          description=" Insumos importados premium para sushi en presentaciones mayoristas. Calidad uniforme y abastecimiento constante para una producción sin interrupciones.  "
           products={products}
         />
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center pb-20"> 

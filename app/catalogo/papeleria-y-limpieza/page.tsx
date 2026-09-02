@@ -31,17 +31,23 @@ export default function ComidaChinaPage() {
     {
       category: "Bandeja de Sushi Grande",
       image: "/bandeja-grande.webp",
-      subtitle: `Bandex "Media Costilla" x 200u con tapa`
+      subtitle: `Bandex "Media Costilla" x 200u con tapa`,
+      mlProduct: true,
+      mlUrl: "https://www.mercadolibre.com.ar/bandeja-plastica-descartable-sushi-12-costilla-rectangular/up/MLAU4295705164?pdp_filters=item_id:MLA1889132361"
     },
     {
       category: "Bandeja de Sushi Chica",
       image: "/bandeja-chica.jpg",
-      subtitle: "Bandex 153 x 200u con tapa"
+      subtitle: "Bandex 153 x 200u con tapa",
+      mlProduct: true,
+      mlUrl: "https://www.mercadolibre.com.ar/bandeja-sushi-chica-bandex-153-con-tapa-para-sushi/up/MLAU4274446811?pdp_filters=item_id:MLA1889093501",
     },
     {
       category: "Bandeja PP 143 Bisagra",
       image: "/bandeja-bisagra.jpg",
-      subtitle: "Bandex Apto Microondas x 200u con tapa"
+      subtitle: "Bandex Apto Microondas x 200u con tapa",
+      mlProduct: true,
+      mlUrl: "https://www.mercadolibre.com.ar/bandeja-estuche-bisagra-143-pp-x-200-uni-microondas/up/MLAU4274216007"
     },
     {
       category: "Bandeja Pet 102",
@@ -64,6 +70,11 @@ export default function ComidaChinaPage() {
       subtitle:"x 1300u con tapa"
     },
     {
+      category:"Botella plastica 40CC",
+      image:"/botellitas.jpg",
+      subtitle:"x 50u con tapa"
+    },
+    {
       category: "Rollo Térmico Comandera",
       image: "/rollo.jpg",
       subtitle:"(80x30) x 10u"
@@ -81,7 +92,9 @@ export default function ComidaChinaPage() {
     {
       category:"Bolsas Kraft FM8",
       image:"/bolsas-kraft.jpg",
-      subtitle:`Papel Madera (27x35x16) x 100u`
+      subtitle:`Papel Madera (27x35x16) x 100u`,
+      mlProduct: true,
+      mlUrl: "https://www.mercadolibre.com.ar/bolsas-kraft-papel-madera-fm8-x-100-un-27-x-35-x-16-cm/up/MLAU4420113575?pdp_filters=item_id:MLA3667951280"
     },
     {
       category:"Bolsas de Arranque",

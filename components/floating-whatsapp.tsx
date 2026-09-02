@@ -1,8 +1,20 @@
+import { buildWhatsappLink } from "@/lib/phone"
 
-export function FloatingWhatsapp() {
+const DEFAULT_PHONE = "11 7266-7077"
+
+export function FloatingWhatsapp({
+  phone = DEFAULT_PHONE,
+}: {
+  phone?: string
+}) {
+  const whatsappLink = buildWhatsappLink(
+    phone,
+    "Hola! Vengo de la página web y me gustaría recibir más información. Gracias!"
+  )
+
   return (
     <a
-      href="https://wa.me/5491172667077?text=Hola!%20Vengo%20de%20la%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n.%20Gracias!"
+      href={whatsappLink}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Consultar por WhatsApp"

@@ -22,7 +22,7 @@ export function CatalogPreview() {
     { name: "Salmón", description: "Premium Salar x KG", image: "/salmon.jpg", badge: "Popular", href:"/catalogo/pescaderia" },
     { name: "Sachet Finlandia", description: "Serenísima x 2KG c/ Manga", image: "/finlandia.jpg", badge: "Popular", href:"/catalogo/almacen" },
     { name: "Alga Yaki", description: "Paquete Blanco x 100 Láminas", image: "/algas-yaki.jpg", badge: "Destacado", href:"/catalogo/productos-para-sushi" },
-    { name: "Vinagre de Alcohol", description: "Menoyo x 5lts", image: "/vinagre-menoyo.jpg", badge: "Destacado", href:"/catalogo/almacen" },
+    { name: "Vinagre de Alcohol", description: "Menoyo x 10lts", image: "/vinagre.jpeg", badge: "Destacado", href:"/catalogo/almacen" },
   ]
   const scroll = (direction: 'left' | 'right') => {
     if (scrollContainerRef.current) {

@@ -132,7 +132,9 @@ export default function CocinaTailandesaPage() {
     {
       category: "Arroz Fortuna 00000",
       image: "/arroz-fortuna.jpg",
-      subtitle: `Premium Para Sushi x 30 KG "Fumeiga"`
+      subtitle: `Premium Para Sushi x 30 KG "Fumeiga"`,
+      mlProduct: true,
+      mlUrl: "https://www.mercadolibre.com.ar/arroz-fumeiga-para-sushi-00000-x-30-kg/up/MLAU4274421722?pdp_filters=item_id:MLA3582039670" // Link directo a esta publicación
     },
     {
       category: "Arroz Largo Fino",
@@ -142,12 +144,16 @@ export default function CocinaTailandesaPage() {
     {
       category: `Algas Nori "Yaki"`,
       image: "/algas-yaki.jpg",
-      subtitle: "Paquete Blanco x 100 Láminas"
+      subtitle: "Paquete Blanco x 100 Láminas",
+      mlProduct: true,
+      mlUrl: "https://www.mercadolibre.com.ar/alga-yaki-nori-x100-sushi/up/MLAU4195066690?pdp_filters=item_id:MLA3539229910"
     },
     {
       category: `Algas Nori "Yamagataya"`,
       image: "/algas-2.jpg",
-      subtitle:"Paquete Rojo x 100 Láminas"
+      subtitle:"Paquete Rojo x 100 Láminas",
+      mlProduct: true,
+      mlUrl: "https://www.mercadolibre.com.ar/algas-nori-sushi-yamagataya-100-laminas-tostadas-importadas/p/MLA2042336556?pdp_filters=item_id:MLA1926106973"
     },
     {
       category:"Blister de Soja",
@@ -155,14 +161,23 @@ export default function CocinaTailandesaPage() {
       subtitle:`"Fumeiga" x 180u`
     },
     {
+      category:"Salsa de Soja 45cc",
+      image:"/bitarwan.jpeg",
+      subtitle:`"Bitarwan" x 169u`,
+      mlProduct: true,
+      mlUrl: "https://www.mercadolibre.com.ar/salsa-de-soja-biterwan-caja-x-169-uni-45-cc/up/MLAU4311454283?pdp_filters=item_id:MLA3610728778"
+    },
+    {
       category:"Salsa de Soja",
       image:"/salsa.jpg",
-      subtitle:`"Fumeiga" Tapa Roja x 5lts`
+      subtitle:`"Fumeiga" Tapa Roja x 5lts`,
+      mlProduct: true,
+      mlUrl: "https://www.mercadolibre.com.ar/salsa-de-soja-fumeiga-premiun-x-5-l/up/MLAU4203623904?pdp_filters=item_id:MLA3545347846"
     },
     {
       category:"Salsa de Soja Sachet",
       image:"/sachet.jpg",
-      subtitle:`"Fumeiga" x 10g x Caja de 5 KG`
+      subtitle:`"Fumeiga" x 10g x Caja de 5 KG`,
     },
     {
       category: "Salsa Agridulce",
@@ -182,7 +197,9 @@ export default function CocinaTailandesaPage() {
     {
       category:"Palitos Chinos con Funda",
       image:"/palillos.jpg",
-      subtitle:`Largos 23cm x 100u`
+      subtitle:`Largos 23cm x 100u`,
+      mlProduct: true,
+      mlUrl: "https://www.mercadolibre.com.ar/pack-x-5-palitos-de-sushi-waribashi-bambu-500-uni/up/MLAU4333667160?pdp_filters=item_id:MLA1897268151"
     },
     {
       category: "Esterillas Gruesas",
@@ -222,7 +239,9 @@ export default function CocinaTailandesaPage() {
     {
       category: "Jengibre en Hojas",
       image: "/jengibre-natural.jpg",
-      subtitle:`Gari Natural x 1 KG`
+      subtitle:`Gari Natural x 1 KG`,
+      mlProduct: true,
+      mlUrl: "https://www.mercadolibre.com.ar/jengibre-gari-natural-para-sushi-en-laminas-x-1-kilo/up/MLAU4203517264?pdp_filters=item_id:MLA1868728907"
     },
     {
       category:"Jengibre en Hojas",
@@ -242,7 +261,9 @@ export default function CocinaTailandesaPage() {
     {
       category: "Wasabi Powder",
       image: "/wasabi.jpg",
-      subtitle:`x 1 KG`
+      subtitle:`x 1 KG`,
+      mlProduct: true,
+      mlUrl: "https://www.mercadolibre.com.ar/wasabi--en-polvo-x-1-kg/up/MLAU4203689612?pdp_filters=item_id:MLA3545196604"
     },
     {
       category:"Ajinomoto",
@@ -298,18 +319,24 @@ export default function CocinaTailandesaPage() {
     },
     {
       category: "Vinagre de Alcohol",
-      image: "/vinagre-menoyo.jpg",
-      subtitle:"Menoyo x 5lts"
+      image: "/vinagre.jpeg",
+      subtitle:"Menoyo x 10lts",
+      mlProduct: true,
+      mlUrl: "https://www.mercadolibre.com.ar/vinagre-menoyo-caja-por-2-unidades-x-10-lt/up/MLAU4942430101?pdp_filters=item_id:MLA2039127067"
     },
     {
       category:"Azúcar Refinada",
       image:"/azucarrefinada.jpeg",
-      subtitle:"Chango x 1 KG"
+      subtitle:"Chango x 1 KG",
+      mlProduct: true,
+      mlUrl: "https://www.mercadolibre.com.ar/azucar-chango-refinada-bulto-10-unidades-x-1-kilo/up/MLAU4185479763?pdp_filters=item_id:MLA1868881867"
     },
     {
       category:"Azúcar",
       image:"/azucar.jpg",
-      subtitle:"x 25 KG"
+      subtitle:"x 25 KG",
+      mlProduct: true,
+      mlUrl: "https://www.mercadolibre.com.ar/azucar-blanca-chango-sin-tacc-x-25-kg/up/MLAU4253538797?pdp_filters=item_id:MLA3582025958"
     },
     {
       category:"Jarabe de Miel",
@@ -328,8 +355,10 @@ export default function CocinaTailandesaPage() {
     },
     {
       category: "Atún al Agua o al Aceite",
-      image: "/atun.jpg",
-      subtitle:"En Pouch/Sobre x 1 KG"
+      image: "/atun-nuevo.jpg",
+      subtitle:"En Pouch/Sobre x 1 KG",
+      mlProduct: true,
+      mlUrl: "https://www.mercadolibre.com.ar/atun-en-sobre-puntamar-x-1kg-pack-de-3-unidades-total-3kg/up/MLAU4203415422?pdp_filters=item_id%3AMLA1868600705#polycard_client=mshops-appearance-api&component=collection_grid&wid=MLA1868600705&title=Productos+recomendados&tracking_id=ade85f490f8e30a43cbdd33181036429&sid=storefronts&global_position=7"
     },
     {
       category:"Durazno en Mitades",
@@ -454,17 +483,23 @@ export default function CocinaTailandesaPage() {
     {
       category: "Bandeja de Sushi Grande",
       image: "/bandeja-grande.webp",
-      subtitle: `Bandex "Media Costilla" x 200u con tapa`
+      subtitle: `Bandex "Media Costilla" x 200u con tapa`,
+      mlProduct: true,
+      mlUrl: "https://www.mercadolibre.com.ar/bandeja-plastica-descartable-sushi-12-costilla-rectangular/up/MLAU4295705164?pdp_filters=item_id:MLA1889132361"
     },
     {
       category: "Bandeja de Sushi Chica",
       image: "/bandeja-chica.jpg",
-      subtitle: "Bandex 153 x 200u con tapa"
+      subtitle: "Bandex 153 x 200u con tapa",
+      mlProduct: true,
+      mlUrl: "https://www.mercadolibre.com.ar/bandeja-sushi-chica-bandex-153-con-tapa-para-sushi/up/MLAU4274446811?pdp_filters=item_id:MLA1889093501",
     },
     {
       category: "Bandeja PP 143 Bisagra",
       image: "/bandeja-bisagra.jpg",
-      subtitle: "Bandex Apto Microondas x 200u con tapa"
+      subtitle: "Bandex Apto Microondas x 200u con tapa",
+      mlProduct: true,
+      mlUrl: "https://www.mercadolibre.com.ar/bandeja-estuche-bisagra-143-pp-x-200-uni-microondas/up/MLAU4274216007"
     },
     {
       category: "Bandeja Pet 102",
@@ -487,6 +522,11 @@ export default function CocinaTailandesaPage() {
       subtitle:"x 1300u con tapa"
     },
     {
+      category:"Botella plastica 40CC",
+      image:"/botellitas.jpg",
+      subtitle:"x 50u con tapa"
+    },
+    {
       category: "Rollo Térmico Comandera",
       image: "/rollo.jpg",
       subtitle:"(80x30) x 10u"
@@ -504,7 +544,9 @@ export default function CocinaTailandesaPage() {
     {
       category:"Bolsas Kraft FM8",
       image:"/bolsas-kraft.jpg",
-      subtitle:`Papel Madera (27x35x16) x 100u`
+      subtitle:`Papel Madera (27x35x16) x 100u`,
+      mlProduct: true,
+      mlUrl: "https://www.mercadolibre.com.ar/bolsas-kraft-papel-madera-fm8-x-100-un-27-x-35-x-16-cm/up/MLAU4420113575?pdp_filters=item_id:MLA3667951280"
     },
     {
       category:"Bolsas de Arranque",
@@ -586,8 +628,6 @@ export default function CocinaTailandesaPage() {
     },
   ]
   
-
-
   return (
     <>
       <Navbar />

@@ -2,11 +2,22 @@
 
 import { Button } from "@/components/ui/button"
 import { MessageCircle, MapPin, Phone, Mail, Clock } from "lucide-react"
+import { buildWhatsappLink, toTelHref } from "@/lib/phone"
 
-export function Contact() {
+const DEFAULT_PHONE = "11 7266-7077"
+
+export function Contact({
+  phone = DEFAULT_PHONE,
+}: {
+  phone?: string
+}) {
+  const whatsappLink = buildWhatsappLink(
+    phone,
+    "Hola! Vengo de la página web y me gustaría recibir más información. Gracias!"
+  )
 
   const handleWhatsApp = () => {
-    window.open("https://wa.me/5491172667077?text=Hola!%20Vengo%20de%20la%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n.%20Gracias!", "_blank")
+    window.open(whatsappLink, "_blank")
   }
 
   const handleMail = () => {
@@ -55,8 +66,8 @@ export function Contact() {
               </div>
               <div>
                 <h3 className="text-xl font-semibold mb-2">Teléfono</h3>
-                <a href="tel:+541172667077" className="text-neutral-300">
-                  +54 11 7266-7077
+                <a href={`tel:${toTelHref(phone)}`} className="text-neutral-300">
+                  +54 {phone}
                 </a>
               </div>
             </div>

@@ -67,18 +67,24 @@ export default function SushiJaponesPage() {
     },
     {
       category: "Vinagre de Alcohol",
-      image: "/vinagre-menoyo.jpg",
-      subtitle:"Menoyo x 5lts"
+      image: "/vinagre.jpeg",
+      subtitle:"Menoyo x 10lts",
+      mlProduct: true,
+      mlUrl: "https://www.mercadolibre.com.ar/vinagre-menoyo-caja-por-2-unidades-x-10-lt/up/MLAU4942430101?pdp_filters=item_id:MLA2039127067"
     },
     {
       category:"Azúcar Refinada",
       image:"/azucarrefinada.jpeg",
-      subtitle:"Chango x 1 KG"
+      subtitle:"Chango x 1 KG",
+      mlProduct: true,
+      mlUrl: "https://www.mercadolibre.com.ar/azucar-chango-refinada-bulto-10-unidades-x-1-kilo/up/MLAU4185479763?pdp_filters=item_id:MLA1868881867"
     },
     {
       category:"Azúcar",
       image:"/azucar.jpg",
-      subtitle:"x 25 KG"
+      subtitle:"x 25 KG",
+      mlProduct: true,
+      mlUrl: "https://www.mercadolibre.com.ar/azucar-blanca-chango-sin-tacc-x-25-kg/up/MLAU4253538797?pdp_filters=item_id:MLA3582025958"
     },
     {
       category:"Jarabe de Miel",
@@ -97,8 +103,10 @@ export default function SushiJaponesPage() {
     },
     {
       category: "Atún al Agua o al Aceite",
-      image: "/atun.jpg",
-      subtitle:"En Pouch/Sobre x 1 KG"
+      image: "/atun-nuevo.jpg",
+      subtitle:"En Pouch/Sobre x 1 KG",
+      mlProduct: true,
+      mlUrl: "https://www.mercadolibre.com.ar/atun-en-sobre-puntamar-x-1kg-pack-de-3-unidades-total-3kg/up/MLAU4203415422?pdp_filters=item_id%3AMLA1868600705#polycard_client=mshops-appearance-api&component=collection_grid&wid=MLA1868600705&title=Productos+recomendados&tracking_id=ade85f490f8e30a43cbdd33181036429&sid=storefronts&global_position=7"
     },
     {
       category:"Durazno en Mitades",

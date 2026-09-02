@@ -10,6 +10,7 @@ import { OrderProcess } from "@/components/order-process"
 import { Suppliers } from "@/components/suppliers"
 import { Clients } from "@/components/clients"
 import { FloatingWhatsapp } from "@/components/floating-whatsapp"
+import { MLHomeStrip } from "@/components/mercado-libre/ml-home-strip"
 
 export const metadata: Metadata = {
   title: "MF Logística - Distribución Mayorista para Restaurantes Orientales | CABA y AMBA",
@@ -43,6 +44,7 @@ export default function Page() {
       <Navbar />
       <main className="min-h-screen pt-20">
         <Hero />
+        <MLHomeStrip/>
         <Services />
         <AboutPreview />
         <CatalogPreview />
